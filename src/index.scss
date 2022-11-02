@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+footer {
+    font-size: .75rem;
+    hr {
+        opacity: 0.1;
+    }
+}
+.NavBar-container {
+    display: flex;
+    ul {
+        list-style-type: none;
+        display: inline-flex;
+    }
+        li {
+        font-weight: bold;
+        margin-right: 1rem;
+            &:hover {
+                text-transform: uppercase;
+    }
+    }
+
+}
