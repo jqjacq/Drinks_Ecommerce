@@ -1,3 +1,6 @@
+$contactfont: 1rem;
+$contactpadding: 1rem 5rem;
+$aboutpadding: 1.5rem 3rem;
 * {
     box-sizing: border-box;
     font-family:Arial, Helvetica, sans-serif;
@@ -8,18 +11,80 @@ footer {
         opacity: 0.1;
     }
 }
-.NavBar-container {
+//ABOUT {
+.about-container {
+    .about {
+    display: flex;
+    font-weight: normal;
+    padding: $aboutpadding;
+    }
+    .about-headlines {
+        font-weight: bold;
+        padding: $aboutpadding;
+    }    
+    .aboutImg, .howImg, .missionImg {
+        width: 200px;
+        height: 150px;
+        border-radius: 5px;
+    }
+    p {
+        padding: $aboutpadding;
+    }
+}
+//NAV BAR
+.navBar-container {
     display: flex;
     ul {
         list-style-type: none;
         display: inline-flex;
     }
         li {
-        font-weight: bold;
-        margin-right: 1rem;
-            &:hover {
-                text-transform: uppercase;
+            font-weight: bold;
+            margin-right: 1rem;
+        &:hover {
+            text-transform: uppercase;
+        }
     }
-    }
-
 }
+
+//CONTACT
+form {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    padding: $contactpadding;
+}
+.contact-headline {
+    text-align: center;
+    font-size: $contactfont;
+}
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 0;
+    font-size: $contactfont;
+    padding: $contactpadding;
+    }
+    textarea {
+        resize: none;
+    }
+    .submit-button {
+        text-align: center;
+        margin: 5px 0;
+    }
+    .contact-button {
+        width: 150px;
+        padding: 5px;
+        border: gray;
+        border-radius: 5px;
+        font-weight: bold;
+        background-color: rgb(204, 202, 202);
+        box-shadow: 2px 1px 1px;
+        color: black;
+        &:hover {
+            background-color: gray;
+            color: white;
+        }
+        &:active {
+            box-shadow: 2px 1px 1px #999;
+            transform: translateY(4px)
+        }
+    }

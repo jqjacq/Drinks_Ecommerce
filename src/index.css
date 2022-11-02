@@ -10,17 +10,81 @@ footer hr {
   opacity: 0.1;
 }
 
-.NavBar-container {
+.about-container .about {
+  display: flex;
+  font-weight: normal;
+  padding: 1.5rem 3rem;
+}
+.about-container .about-headlines {
+  font-weight: bold;
+  padding: 1.5rem 3rem;
+}
+.about-container .aboutImg, .about-container .howImg, .about-container .missionImg {
+  width: 200px;
+  height: 150px;
+  border-radius: 5px;
+}
+.about-container p {
+  padding: 1.5rem 3rem;
+}
+
+.navBar-container {
   display: flex;
 }
-.NavBar-container ul {
+.navBar-container ul {
   list-style-type: none;
   display: inline-flex;
 }
-.NavBar-container li {
+.navBar-container li {
   font-weight: bold;
   margin-right: 1rem;
 }
-.NavBar-container li:hover {
+.navBar-container li:hover {
   text-transform: uppercase;
+}
+
+form {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  padding: 1rem 5rem;
+}
+
+.contact-headline {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px 0;
+  font-size: 1rem;
+  padding: 1rem 5rem;
+}
+
+textarea {
+  resize: none;
+}
+
+.submit-button {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.contact-button {
+  width: 150px;
+  padding: 5px;
+  border: gray;
+  border-radius: 5px;
+  font-weight: bold;
+  background-color: rgb(204, 202, 202);
+  box-shadow: 2px 1px 1px;
+  color: black;
+}
+.contact-button:hover {
+  background-color: gray;
+  color: white;
+}
+.contact-button:active {
+  box-shadow: 2px 1px 1px #999;
+  transform: translateY(4px);
 }/*# sourceMappingURL=index.css.map */
