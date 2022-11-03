@@ -3,7 +3,7 @@ const coffeetea = [{
     type:"Green Tea",
     img: "img/teas/green.jpg", 
     description: "All time classic.",
-    pricePerLb: "9.99/lb",
+    pricePerLb: "$9.99/lb",
 },{
     category: "Tea",
     type:"Pu Erh Tea",
@@ -15,7 +15,7 @@ const coffeetea = [{
     type:"Oolong Tea",
     img: "img/teas/oolong.jpg", 
     description: "Refreshing with a taste of aromatic roasted fruity taste.",
-    pricePerLb: "12.99/lb",
+    pricePerLb: "$12.99/lb",
 },{
     category: "Tea",
     type:"Chai Tea",
@@ -33,7 +33,7 @@ const coffeetea = [{
     type:"Rose Tea",
     img: "img/teas/rose.jpg", 
     description: "Subtle floral flavor with mild sweetness. Tastes and smells like rose.",
-    pricePerLb: "9.99/lb",
+    pricePerLb: "$9.99/lb",
 },{
     category: "Tea",
     type:"Ceylon Tea",
@@ -45,13 +45,13 @@ const coffeetea = [{
     type:"Earl Grey Tea",
     img: "img/teas/earlgrey.jpg", 
     description: "Black tea with a hint taste of orange and floral.",
-    pricePerLb: "14.99/lb",
+    pricePerLb: "$14.99/lb",
 },{
     category: "Tea",
     type:"Jasmine Tea",
     img: "img/teas/jasmine.jpg", 
     description: "Tastes like green tea with a sweet floral and earthy taste.",
-    pricePerLb: "15.99/lb",
+    pricePerLb: "$15.99/lb",
 },{
     category: "Tea",
     type:"White Tea",

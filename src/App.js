@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "./component/NavBar"
+import MainImage from "./component/MainImage"
 import About from "./component/About"
 import Product from "./component/Product"
 import Contact from "./component/Contact"
@@ -18,6 +19,7 @@ export default function App() {
     return (
         <div>
             <Navbar />
+            <MainImage />
                 <div className=".productimage-container">
                     <div className="gridbox">
                         {allCoffeeTea}
