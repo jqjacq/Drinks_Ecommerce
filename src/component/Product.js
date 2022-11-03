@@ -1,9 +1,8 @@
 import React from "react"
 
-export default function Product() {
+export default function Product(props) {
     return (
-        <div>
-            
-        </div>
+        <img src={props.img} className="coffeeteaImage"
+        alt={`${props.type}`}/>
     )
 }

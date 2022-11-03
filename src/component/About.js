@@ -3,19 +3,6 @@ import React from "react"
 export default function About() {
     return (
         <div className="about-container">
-            <section className="about-headlines">About our tea and coffee
-                <div className="about">
-                    <img className="aboutImg" src="../img/aboutimage.jpg" alt="cupoftea"></img>
-                    <p>
-                    We can guarantee that our tea and coffee are of the best quality. <br></br>
-                    We traveled and sampled tea and coffee from other parts of the world. <br></br>
-                    Our tea and coffee are from the most well-known tea- and coffee-producing countries. <br></br>
-                    Our tea is from the world's largest producer of tea, China. <br></br>
-                    Our coffee is from Brazil, Colombia, Ethiopia, Honduras, Hawaii, and Tanzania, where the best coffee resides. <br></br>
-                    </p>
-                </div>
-            </section>
-
             <section className="about-headlines">How we started
                 <div className="about">
                     <img className="howImg" src="../img/howwestarted.jpg" alt="anothercupoftea"></img>
@@ -29,6 +16,19 @@ export default function About() {
                     </p>
                 </div>
             </section>
+            <section className="about-headlines">About our tea and coffee
+                <div className="about">
+                    <img className="aboutImg" src="../img/aboutimage.jpg" alt="cupoftea"></img>
+                    <p>
+                    We can guarantee that our tea and coffee are of the best quality. <br></br>
+                    We traveled and sampled tea and coffee from other parts of the world. <br></br>
+                    Our tea and coffee are from the most well-known tea- and coffee-producing countries. <br></br>
+                    Our tea is from the world's largest producer of tea, China. <br></br>
+                    Our coffee is from Brazil, Colombia, Ethiopia, Honduras, Hawaii, and Tanzania, where the best coffee resides. <br></br>
+                    </p>
+                </div>
+            </section>
+
             
             <section className="about-headlines">Our mission
                 <div className="about">
