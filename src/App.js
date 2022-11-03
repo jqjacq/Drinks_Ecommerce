@@ -10,7 +10,7 @@ import coffeeteaData from "./data/coffeetea"
 export default function App() {
     const allCoffeeTea = coffeeteaData.map(coffeeteaItem => {
         return (
-            <Product 
+            <Product
                 key = {coffeeteaItem.id}
                 {...coffeeteaItem}
                 />
@@ -20,10 +20,8 @@ export default function App() {
         <div>
             <Navbar />
             <MainImage />
-                <div className=".productimage-container">
-                    <div className="gridbox">
+                <div className="productimage-container">
                         {allCoffeeTea}
-                    </div>
                 </div>
             <About />
             <Contact />

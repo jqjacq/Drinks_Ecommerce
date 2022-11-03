@@ -2,13 +2,13 @@ import React from "react"
 
 export default function Product(props) {
     return (
-        <div>
-        <p>{props.type}</p>
-        <img src={props.img} className="coffeeteaImage"
+        <figure>
+        <img src = {props.img} className="coffeeteaImage"
         alt={`${props.type}`}/>
+        <p className = "coffeeteaType"> {props.type} </p>
         <p>{props.pricePerLb}
             <button>BUY</button> 
         </p>
-        </div>
+        </figure>
     )
-}
+    }

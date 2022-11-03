@@ -72,12 +72,11 @@ footer {
 //PRODUCT 
 .productimage-container {
     display: grid;
-    grid-template-rows: 1fr 1fr, 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr, 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-.gridbox{    
-    align-items: center;
-    justify-content: center;
+.coffeeteaType {
+    font-weight: bold;
 }
 .coffeeteaImage {
     border-radius: 5px;
