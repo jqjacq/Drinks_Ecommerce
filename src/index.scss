@@ -9,32 +9,26 @@ body {
     display: flex;
     justify-content: center;
 }
-footer {
-    font-size: .75rem;
-    hr {
-        opacity: 0.1;
-    }
-}
 
 //ABOUT {
-.about-container {
-    .about {
-    display: flex;
+    .about-container {
+        .about {
+            display: flex;
     font-weight: normal;
     padding: $aboutpadding;
-    }
-    .about-headlines {
-        font-weight: bold;
-        padding: $aboutpadding;
-    }    
-    .aboutImg, .howImg, .missionImg {
-        width: 200px;
-        height: 150px;
-        border-radius: 5px;
-    }
-    p {
-        padding: $aboutpadding;
-    }
+}
+.about-headlines {
+    font-weight: bold;
+    padding: $aboutpadding;
+}    
+.aboutImg, .howImg, .missionImg {
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+}
+p {
+    padding: $aboutpadding;
+}
 }
 
 //NAV BAR
@@ -44,15 +38,15 @@ footer {
         font-weight: bold;
         padding: 5px 20px;
         background-color: rgb(173, 237, 173);
-
+        
     }
     ul {
         list-style-type: none;
         display: inline-flex;
         align-items: flex-end;
     }
-        li {
-            margin-right: 1rem;
+    li {
+        margin-right: 1rem;
         &:hover {
             text-transform: uppercase;
         }
@@ -67,7 +61,7 @@ footer {
         width: 100%;
         height: 450px;
     }
-
+    
 }
 //PRODUCT 
 .productimage-container {
@@ -99,12 +93,12 @@ form {
     gap: 6px 0;
     font-size: $contactfont;
     padding: $contactpadding;
-    }
-    textarea {
-        resize: none;
-    }
-    .submit-button {
-        text-align: center;
+}
+textarea {
+    resize: none;
+}
+.submit-button {
+    text-align: center;
         margin: 5px 0;
     }
     .contact-button {
@@ -125,3 +119,34 @@ form {
             transform: translateY(4px)
         }
     }
+//FOOTER
+footer {
+    font-size: .75rem;
+    padding: 2rem;
+    .additionalinfo {
+        display: flex;
+        justify-content: center;
+        ul {
+            display: inline-flex;
+            list-style-type: none;
+        }
+        li {
+            margin-right: 50px;
+            text-decoration: none;
+        }
+    }
+    .socialmedia {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+            .fa-brands {
+                margin-right: 5px;
+            }
+        }
+    hr {
+        opacity: 0.1;
+    }
+    .copyright {
+        text-align: center;
+    }
+}

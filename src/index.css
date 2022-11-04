@@ -8,13 +8,6 @@ body {
   justify-content: center;
 }
 
-footer {
-  font-size: 0.75rem;
-}
-footer hr {
-  opacity: 0.1;
-}
-
 .about-container .about {
   display: flex;
   font-weight: normal;
@@ -121,4 +114,35 @@ textarea {
 .contact-button:active {
   box-shadow: 2px 1px 1px #999;
   transform: translateY(4px);
+}
+
+footer {
+  font-size: 0.75rem;
+  padding: 2rem;
+}
+footer .additionalinfo {
+  display: flex;
+  justify-content: center;
+}
+footer .additionalinfo ul {
+  display: inline-flex;
+  list-style-type: none;
+}
+footer .additionalinfo li {
+  margin-right: 50px;
+  text-decoration: none;
+}
+footer .socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+footer .socialmedia .fa-brands {
+  margin-right: 5px;
+}
+footer hr {
+  opacity: 0.1;
+}
+footer .copyright {
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */
