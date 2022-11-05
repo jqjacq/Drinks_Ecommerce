@@ -12,6 +12,17 @@ export default function NavBar() {
                 <li>About</li>
                 <li>Product</li>
                 <li>Contact</li>
+                <li>
+                    <input type="text" className="search" placeholder="Search..."></input> 
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </li>
+                <li>
+                    <button className="shoppingCart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span className="cart">0</span>
+                    </button>
+                </li>
+
             </ul>
         </div>
     )
