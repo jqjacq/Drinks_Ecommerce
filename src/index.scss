@@ -73,11 +73,14 @@ body {
 .mainimage-container {
     .mainImage {
         width: 100%;
-        height: 450px;
+        height: 500px;
     }
     
 }
 //PRODUCT 
+.product-header {
+    text-align: center;
+}
 .productimage-container {
     display: grid;
     grid-template-rows: 1fr 1fr, 1fr 1fr;
@@ -90,6 +93,9 @@ body {
     border-radius: 5px;
     width: 100px;
     height: 100px;
+}
+.buy {
+    margin-left: 5px;
 }
 
 //CONTACT
