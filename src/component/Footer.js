@@ -5,11 +5,16 @@ export default function Footer() {
         <footer className="footer">
             <br></br>
             <p className="socialmedia">
-                <i class="fa-brands fa-lg fa-github"></i>
-                <i class="fa-brands fa-lg fa-facebook"></i>
-                <i class="fa-brands fa-lg fa-instagram"></i>
-                <i class="fa-brands fa-lg fa-twitter"></i>
-                <i class="fa-brands fa-lg fa-youtube"></i>
+                <a href="https://www.github.com/jqjacq" alt="Github">
+                <i class="fa-brands fa-2x fa-github"></i></a>
+                <a href="https://www.facebook.com" alt="Facebook Page">
+                <i class="fa-brands fa-2x fa-facebook"></i></a>
+                <a href="https://www.instagram.com" alt="Instagram Page">
+                <i class="fa-brands fa-2x fa-instagram"></i></a>
+                <a href="https://www.twitter.com" alt="Twitter Page">
+                <i class="fa-brands fa-2x fa-twitter"></i></a>
+                <a href="https://www.youtube.com" alt="YouTube Page">
+                <i class="fa-brands fa-2x fa-youtube"></i></a>
             </p>
             <p className="additionalinfo">
                 <ul>

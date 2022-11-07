@@ -153,13 +153,21 @@ footer {
         li {
             margin-right: 50px;
             text-decoration: none;
+            &:hover {
+                font-style: italic;
+            }
+            &:active {
+                font-weight: bold;
+            }
         }
+
     }
     .socialmedia {
         display: flex;
         justify-content: center;
         align-items: flex-end;
             .fa-brands {
+                color: black;
                 margin-right: 5px;
             }
         }

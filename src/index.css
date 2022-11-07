@@ -154,12 +154,19 @@ footer .additionalinfo li {
   margin-right: 50px;
   text-decoration: none;
 }
+footer .additionalinfo li:hover {
+  font-style: italic;
+}
+footer .additionalinfo li:active {
+  font-weight: bold;
+}
 footer .socialmedia {
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
 footer .socialmedia .fa-brands {
+  color: black;
   margin-right: 5px;
 }
 footer hr {
