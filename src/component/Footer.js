@@ -1,7 +1,8 @@
 import React from "react"
 
-export default function Footer() {
+export default function Footer(props) {
     return (
+        <>
         <footer className="footer">
             <br></br>
             <p className="socialmedia">
@@ -18,12 +19,12 @@ export default function Footer() {
             </p>
             <p className="additionalinfo">
                 <ul>
-                    <li>About us</li>
-                    <li>Shipping Status</li>
-                    <li>Return Policy</li>
-                    <li>Feedback</li>
-                    <li>Location</li>
-                    <li>Contact Us</li>
+                    <li onClick={()=> props.onContentChange("about")}>About us</li>
+                    <li onClick={()=> props.onContentChange("shipping")}>Shipping Status</li>
+                    <li onClick={()=> props.onContentChange("return")}>Return Policy</li>
+                    <li onClick={()=> props.onContentChange("feedback")}>Feedback</li>
+                    <li onClick={()=> props.onContentChange("location")}>Location</li>
+                    <li onClick={()=> props.onContentChange("contact")}>Contact Us</li>
                 </ul>
             </p>
             <hr></hr>
@@ -32,5 +33,6 @@ export default function Footer() {
                 <span>· THIS IS NOT AN ACTUAL PRODUCT FOR SALE.</span> 
             </div>
         </footer>
+        </>
     )
 }

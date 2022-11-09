@@ -4,7 +4,10 @@ export default function Contact() {
     return (
         <form>
             <fieldset>
-                <legend>Contact us</legend>
+                <legend>
+                    <i class="fa-regular fa-address-card"></i>
+                    Contact us
+                </legend>
                 <p className="contact-headline">Got any questions, suggestions, or concerns? Feel free to let us know!</p>
                     <div className="contact-container">
                     <label for="first-name">Full Name:</label>

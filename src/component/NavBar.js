@@ -1,27 +1,6 @@
 import React from "react"
-import About from "./About"
-import Contact from "./Contact"
-import Product from "./Product"
 
-
-export default function NavBar() {
-    const [Content, setContent] = React.useState("home")
-    const MyContent = () => {
-        if (Content === "home") {
-            return (
-                <About />
-            )
-        }
-        else if (Content === "product") {
-            return (
-                <Product />
-            )
-        } else {
-            return (
-                <Contact />
-            )
-        } 
-    }
+export default function NavBar(props) {
     return (
         <>
         <div className="navBar-container">
@@ -31,9 +10,9 @@ export default function NavBar() {
                
             </p>
             <ul>
-                <li onClick={()=> setContent("home")}>Home</li>
-                <li onClick={()=> setContent("product")}>Product</li>
-                <li onClick={()=> setContent("contact")}>Contact</li>
+                <li onClick={()=> props.onContentChange("home")}>Home</li>
+                <li onClick={()=> props.onContentChange("product")}>Product</li>
+                <li onClick={()=> props.onContentChange("contact")}>Contact</li>
                 <li>
                     <input type="text" className="search" placeholder="Search..."></input> 
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -46,7 +25,6 @@ export default function NavBar() {
                 </li>
             </ul>
         </div>
-            <MyContent />
         </>
     )
 }

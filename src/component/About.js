@@ -6,6 +6,7 @@ export default function About(props) {
             <div className="mainimage-container">
                 <img src="../img/front.jpg" className="mainImage" alt="field of greens"/>
             </div> 
+            <h1 className="about-header">About us</h1>
             <div className="about-container">
                 <section className="about-headlines">How we started
                     <div className="about">
