@@ -26,6 +26,15 @@ export default function Contact() {
                     <button className="contact-button" type="submit">Submit</button>
                     </div>
             </fieldset>
+            <div className = "location-container">
+            <h4> 
+                <i class="fa-solid fa-location-dot"></i>
+                Where are we located? </h4> 
+            <p> Factory Address:
+                1234 Cool Ave, Awesome City, AC, 12345 </p> 
+            <p> Cafe Address:
+                5555 Cafe Ave, Coffee City, CC, 54321 </p>
+        </div>
         </form>
     )
 }

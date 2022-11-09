@@ -19,12 +19,9 @@ export default function Footer(props) {
             </p>
             <p className="additionalinfo">
                 <ul>
-                    <li onClick={()=> props.onContentChange("about")}>About us</li>
-                    <li onClick={()=> props.onContentChange("shipping")}>Shipping Status</li>
-                    <li onClick={()=> props.onContentChange("return")}>Return Policy</li>
-                    <li onClick={()=> props.onContentChange("feedback")}>Feedback</li>
-                    <li onClick={()=> props.onContentChange("location")}>Location</li>
-                    <li onClick={()=> props.onContentChange("contact")}>Contact Us</li>
+                    <li onClick={()=> props.onClick("about")}>About us</li>
+                    <li onClick={()=> props.onClick("shipping/return")}>Shipping & Return </li>
+                    <li onClick={()=> props.onClick("contact")}>Feedbacks</li>
                 </ul>
             </p>
             <hr></hr>

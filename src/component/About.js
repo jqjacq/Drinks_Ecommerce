@@ -2,7 +2,7 @@ import React from "react"
 
 export default function About(props) {
     return (
-        <div className="home">
+        <div>
             <div className="mainimage-container">
                 <img src="../img/front.jpg" className="mainImage" alt="field of greens"/>
             </div> 

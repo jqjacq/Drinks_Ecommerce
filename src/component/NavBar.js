@@ -7,12 +7,11 @@ export default function NavBar(props) {
             <p className="logo">
                  <i class="fa-solid fa-leaf fa-lg"></i>
                  JQ's Tea and Coffee Store
-               
             </p>
             <ul>
-                <li onClick={()=> props.onContentChange("home")}>Home</li>
-                <li onClick={()=> props.onContentChange("product")}>Product</li>
-                <li onClick={()=> props.onContentChange("contact")}>Contact</li>
+                <li onClick={()=> props.onClick("home")}>Home</li>
+                <li onClick={()=> props.onClick("product")}>Product</li>
+                <li onClick={()=> props.onClick("contact")}>Contact</li>
                 <li>
                     <input type="text" className="search" placeholder="Search..."></input> 
                     <i class="fa-solid fa-magnifying-glass"></i>

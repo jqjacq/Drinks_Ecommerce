@@ -11,14 +11,14 @@ body {
 .about-container .about {
   display: flex;
   font-weight: normal;
-  padding: 1.5rem 2rem;
 }
 .about-container .about-header {
   text-align: center;
 }
 .about-container .about-headlines {
   font-weight: bold;
-  padding: 1.5rem 2rem;
+  padding: 1rem;
+  margin: 0.5rem;
 }
 .about-container .aboutImg, .about-container .howImg, .about-container .missionImg {
   width: 200px;
@@ -26,7 +26,7 @@ body {
   border-radius: 5px;
 }
 .about-container p {
-  padding: 1.5rem 2rem;
+  padding: 5px 10px;
 }
 
 .navBar-container {
@@ -35,14 +35,12 @@ body {
 }
 .navBar-container .logo {
   font-weight: bold;
-  padding: 5px 50px;
-  margin: auto;
+  padding: 5px 0px;
   background-color: rgb(173, 237, 173);
 }
 .navBar-container ul {
   list-style-type: none;
   display: inline-flex;
-  align-items: flex-end;
 }
 .navBar-container li {
   margin-right: 1rem;
@@ -53,13 +51,10 @@ body {
 .navBar-container li:active {
   font-weight: bold;
 }
-.navBar-container i {
-  padding-right: 5px;
-}
 .navBar-container .search {
-  margin-left: 350px;
   margin-right: 3px;
   padding: 2px;
+  width: 150px;
 }
 .navBar-container .shoppingCart {
   border: lightgreen;
@@ -182,4 +177,8 @@ footer hr {
 }
 footer .copyright {
   text-align: center;
+}
+
+.fa-solid {
+  margin-right: 5px;
 }/*# sourceMappingURL=index.css.map */

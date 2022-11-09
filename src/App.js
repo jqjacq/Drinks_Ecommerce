@@ -4,9 +4,7 @@ import Footer from "./component/Footer"
 import About from "./component/About"
 import Contact from "./component/Contact"
 import Product from "./component/Product"
-import Location from "./component/Location"
-import Return from "./component/Return"
-import Shipping from "./component/Shipping"
+import ShippingReturn from "./component/Shipping-Return"
 
 export default function App() {
     const [MyContent, setMyContent] = React.useState("home")
@@ -28,28 +26,10 @@ export default function App() {
                 </>
             )
         }
-        else if (MyContent === "shipping") {
+        else if (MyContent === "shipping/return") {
             return (
                 <>
-                <Shipping />
-                </>
-            )
-        } else if (MyContent === "return") {
-            return (
-                <>
-                <Return />
-                </>
-            )
-        } else if (MyContent === "feedback") {
-            return (
-                <>
-                <Contact />
-                </>
-            )
-        } else if (MyContent === "location") {
-            return (
-                <>
-                <Location />
+                <ShippingReturn />
                 </>
             )
         } else {
@@ -63,11 +43,11 @@ export default function App() {
     return (
         <div>
             <Navbar 
-                onContentChange = {setMyContent}
+                onClick = {setMyContent}
             />
             <Content />
             <Footer 
-                onContentChange = {setMyContent}
+                onClick = {setMyContent}
             />
         </div>
     )

@@ -1,6 +1,5 @@
 $contactfont: 1rem;
 $contactpadding: 1rem 5rem;
-$aboutpadding: 1.5rem 2rem;
 * {
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
@@ -12,17 +11,17 @@ body {
 
 //ABOUT {
 .about-container {
-        .about {
-            display: flex;
-            font-weight: normal;
-            padding: $aboutpadding;
+    .about {
+        display: flex;
+        font-weight: normal;
     }
     .about-header {
         text-align: center;
     }
     .about-headlines {
         font-weight: bold;
-        padding: $aboutpadding;
+        padding: 1rem;
+        margin: .5rem;
     }    
     .aboutImg, .howImg, .missionImg {
         width: 200px;
@@ -30,7 +29,7 @@ body {
         border-radius: 5px;
     }
     p {
-        padding: $aboutpadding;
+        padding: 5px 10px;
     }
 }
 
@@ -40,14 +39,12 @@ body {
     position: relative;
     .logo {
         font-weight: bold;
-        padding: 5px 50px;
-        margin: auto;
+        padding: 5px 0px;
         background-color: rgb(173, 237, 173);
     }
     ul {
         list-style-type: none;
         display: inline-flex;
-        align-items: flex-end;
     }
         li {
             margin-right: 1rem;
@@ -58,13 +55,10 @@ body {
             font-weight: bold;
         }
     }
-    i {
-        padding-right: 5px;
-    }
     .search {
-        margin-left: 350px;
         margin-right: 3px;
         padding: 2px;
+        width: 150px;
     }
     .shoppingCart {
         border: lightgreen;
@@ -184,4 +178,7 @@ footer {
     .copyright {
         text-align: center;
     }
+}
+.fa-solid {
+    margin-right: 5px;
 }
