@@ -16,7 +16,8 @@ export default function ProductItem(props) {
             <button className="buy"> BUY</button> 
             </p>
         </section>
-        <PopUp trigger = {buttonPopup} setTrigger= {setButtonPopup}>
+        <PopUp trigger = {buttonPopup} 
+            setTrigger= {setButtonPopup}>
             <div>
                 <h2> {props.data.type} </h2>
                 <img src = {props.data.img} className="coffeeteaImage" alt = {props.data.type}/>
