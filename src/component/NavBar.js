@@ -1,4 +1,5 @@
 import React from "react"
+// import SearchList from "./SearchList"
 
 export default function NavBar(props) {
     return (
@@ -12,10 +13,11 @@ export default function NavBar(props) {
                 <li onClick={()=> props.onClick("home")}>Home</li>
                 <li onClick={()=> props.onClick("product")}>Product</li>
                 <li onClick={()=> props.onClick("contact")}>Contact</li>
-                <li>
+                {/* <li> <SearchList /> </li> */}
+                {/* <li>
                     <input type="text" className="search" placeholder="Search..."></input> 
                     <i class="fa-solid fa-magnifying-glass"></i>
-                </li>
+                </li> */}
                 <li>
                     <button className="shoppingCart">
                         <i class="fa-solid fa-cart-shopping"></i>

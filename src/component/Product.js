@@ -1,14 +1,13 @@
 import React from "react"
 import teacoffeeData from "../data/coffeetea"
+import ProductItem from "./ProductItem"
 
 export default function Product() {
     const TeaCoffee = teacoffeeData.map(data => 
-        <div>
-            <img src = {data.img} className="coffeeteaImage" alt = {data.type}/>
-            <p className = "coffeeteaType"> {data.type} </p>
-            <p>{data.pricePerLb} 
-            <button className="buy">BUY</button> </p>
-         </div>
+            <ProductItem 
+                key = {data.type}
+                data = {data}
+            />
         )
     return (
     <div>
