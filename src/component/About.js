@@ -6,8 +6,8 @@ export default function About(props) {
     // }
     return (
         <div>
-            <h1 className="about-header" style={{"textAlign":"center"}}>About us</h1>
             <div className="about-container">
+            <h1 className="about-header">About us</h1>
                 <section className="about-headlines">How we started
                     <div className="about">
                         <img className="howImg" src="../img/howwestarted.jpg" alt="anothercupoftea"></img>

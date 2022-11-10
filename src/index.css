@@ -11,6 +11,9 @@ body {
   text-align: center;
 }
 
+.about-container .about-header {
+  text-align: center;
+}
 .about-container .about {
   display: flex;
   font-weight: normal;
@@ -69,25 +72,29 @@ body {
   padding: 16px 0px;
   background-color: rgb(99, 200, 99);
 }
-.mainimage-container .productimage-container {
+
+.product-header {
+  text-align: center;
+}
+
+.productimage-container {
   display: grid;
   grid-template-rows: 1fr 1fr, 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  width: 100%;
 }
-.mainimage-container .coffeeteaType {
+.productimage-container .coffeeteaType {
   font-weight: bold;
 }
-.mainimage-container .coffeeteaImage {
+.productimage-container .coffeeteaImage {
   border-radius: 5px;
   width: 100px;
   height: 100px;
 }
-.mainimage-container .coffeeteaImage:hover {
+.productimage-container .coffeeteaImage:hover {
   opacity: 0.7;
   cursor: pointer;
 }
-.mainimage-container .buy {
+.productimage-container .buy {
   margin-left: 5px;
   cursor: pointer;
 }
@@ -97,8 +104,8 @@ form {
   padding: 1rem 5rem;
 }
 
-.fa-regular {
-  margin-right: 5px;
+.contact-header {
+  text-align: center;
 }
 
 .contact-box {
@@ -108,11 +115,8 @@ form {
   padding: 1rem 5rem;
 }
 
-textarea {
-  resize: none;
-}
-
 .contact-button {
+  margin-left: 30vw;
   width: 150px;
   padding: 5px;
   border: gray;
@@ -131,42 +135,54 @@ textarea {
   transform: translateY(4px);
 }
 
-footer {
+textarea {
+  resize: none;
+}
+
+.fa-regular {
+  margin-right: 5px;
+}
+
+.location-container {
+  text-align: center;
+}
+
+.footer {
   font-size: 0.75rem;
   padding: 2rem;
 }
-footer .additionalinfo {
+.footer .additionalinfo {
   display: flex;
   justify-content: center;
 }
-footer .additionalinfo ul {
+.footer ul {
   display: inline-flex;
   list-style-type: none;
 }
-footer .additionalinfo li {
+.footer li {
   margin-right: 50px;
   text-decoration: none;
 }
-footer .additionalinfo li:hover {
+.footer li:hover {
   font-style: italic;
   cursor: pointer;
 }
-footer .additionalinfo li:active {
+.footer li:active {
   font-weight: bold;
 }
-footer .socialmedia {
+
+.socialmedia {
   display: flex;
   justify-content: center;
   align-items: flex-end;
 }
-footer .socialmedia .fa-brands {
+.socialmedia .fa-brands {
   color: black;
   margin-right: 5px;
 }
-footer hr {
+.socialmedia hr {
   opacity: 0.1;
 }
-
-.fa-solid {
+.socialmedia .fa-solid {
   margin-right: 5px;
 }/*# sourceMappingURL=index.css.map */

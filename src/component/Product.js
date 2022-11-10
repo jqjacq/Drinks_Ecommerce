@@ -10,12 +10,11 @@ export default function Product() {
             />
         )
     return (
-        <div className="product-container">
-            <h1 className="product-header" style={{"textAlign":"center"}}> Our Products</h1>
-            <br></br>
-            <div className="productimage-container">
-                {TeaCoffee}
+            <div className="product-container">
+                <h1 className="product-header"> Our Products</h1>
+                <div className="productimage-container">
+                    {TeaCoffee}
+                </div>
             </div>
-        </div>
     )
 }

@@ -5,7 +5,7 @@ export default function MainImage() {
     <div className="mainimage-container">
         <img src="../img/front.jpg" className="mainImage" alt="field of greens"/>
             <span className="logo">
-                    <i class="fa-solid fa-leaf fa-lg"></i>
+                    <i className="fa-solid fa-leaf fa-lg"></i>
                     JQ's Tea and Coffee Store 
             </span>
     </div> 

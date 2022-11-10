@@ -7,7 +7,8 @@ export default function ProductItem(props) {
     return (
         <div>
         <section>
-            <img src = {props.data.img} className="coffeeteaImage" alt = {props.data.type}
+            <img src = {props.data.img} className="coffeeteaImage" 
+                alt = {props.data.type}
                 onClick={()=> setButtonPopup(true)}
             />
             <p className = "coffeeteaType"> {props.data.type} </p>

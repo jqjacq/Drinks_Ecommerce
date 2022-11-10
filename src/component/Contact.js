@@ -3,10 +3,10 @@ import React from "react"
 export default function Contact() {
     return (
         <div className="contact-container">
-            <h1 style={{"textAlign":"center"}}><i class="fa-regular fa-address-card"></i>Contact us</h1>
+            <h1 className="contact-header"><i class="fa-regular fa-address-card"></i>Contact us</h1>
             <form>
                 <fieldset>
-                    <p className="contact-header">Got any questions, suggestions, or concerns? Feel free to let us know!</p>
+                    <p className="contact-subhead">Got any questions, suggestions, or concerns? Feel free to let us know!</p>
                     <div className="contact-box">
                         <label for="first-name">Full Name:</label>
                             <input type="text" id="full-name" 
@@ -25,7 +25,7 @@ export default function Contact() {
                     </div>
                 </fieldset>
             <div className = "location-container">
-                <h4 style={{"textAlign":"center"}}> 
+                <h4> 
                 <i class="fa-solid fa-location-dot"></i>
                 Where are we located? </h4> 
                 <p> Factory Address:

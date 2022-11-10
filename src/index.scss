@@ -7,13 +7,16 @@ $contactpadding: 1rem 5rem;
 body {
     justify-content: center;
 }
+
 //TEXT-ALIGN-CENTER 
 .copyright .submit-button {
     text-align: center;
 }   
 //ABOUT {
-
 .about-container {
+    .about-header {
+        text-align: center;
+    }
     .about {
         display: flex;
         font-weight: normal;
@@ -77,54 +80,51 @@ body {
         font-weight: bold;
         padding: 16px 0px;
         background-color: rgb(99, 200, 99);
+    }
 }
 
 //PRODUCT 
+.product-header {
+    text-align: center;
+}
 .productimage-container {
     display: grid;
     grid-template-rows: 1fr 1fr, 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 100%;
-}
-.coffeeteaType {
-    font-weight: bold;
-}
-.coffeeteaImage {
-    border-radius: 5px;
-    width: 100px;
-    height: 100px;
-        &:hover {
-        opacity: 0.7;
-        cursor: pointer;
+    .coffeeteaType {
+        font-weight: bold;
     }
-}
-.buy {
+    .coffeeteaImage {
+        border-radius: 5px;
+        width: 100px;
+        height: 100px;
+            &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+
+        }
+    }
+    .buy {
     margin-left: 5px;
     cursor: pointer;
     }
 }
-
-
 //CONTACT
 form {
     font-size: clamp(1rem, 2.5vw, 1.5rem);
     padding: $contactpadding;
 }
-.fa-regular {
-    margin-right: 5px;
-}
-
-.contact-box {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6px 0;
-    padding: $contactpadding;
-}
-textarea {
-    resize: none;
-}
-
+    .contact-header {
+        text-align: center;
+    }
+    .contact-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px 0;
+        padding: $contactpadding;
+    }
     .contact-button {
+        margin-left: 30vw;
         width: 150px;
         padding: 5px;
         border: gray;
@@ -133,22 +133,33 @@ textarea {
         background-color: rgb(204, 202, 202);
         box-shadow: 2px 1px 1px;
         color: black;
-        &:hover {
-            background-color: gray;
-            color: white;
-        }
-        &:active {
-            box-shadow: 2px 1px 1px #999;
-            transform: translateY(4px)
-        }
+            &:hover {
+                background-color: gray;
+                color: white;
+            }
+            &:active {
+                box-shadow: 2px 1px 1px #999;
+                transform: translateY(4px)
+            }
     }
+    textarea {
+            resize: none;
+        }
+    .fa-regular {
+        margin-right: 5px;
+    }
+    .location-container {
+        text-align: center;
+    }
+
 //FOOTER
-footer {
+.footer {
     font-size: .75rem;
     padding: 2rem;
     .additionalinfo {
         display: flex;
         justify-content: center;
+    }
         ul {
             display: inline-flex;
             list-style-type: none;
@@ -159,13 +170,12 @@ footer {
             &:hover {
                 font-style: italic;
                 cursor: pointer
-            }
+                }
             &:active {
                 font-weight: bold;
+                }
             }
         }
-
-    }
     .socialmedia {
         display: flex;
         justify-content: center;
@@ -174,12 +184,10 @@ footer {
                 color: black;
                 margin-right: 5px;
             }
-        }
     hr {
         opacity: 0.1;
     }
-
-}
 .fa-solid {
     margin-right: 5px;
+    }
 }

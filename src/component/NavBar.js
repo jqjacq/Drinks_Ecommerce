@@ -21,7 +21,7 @@ export default function NavBar(props) {
                 </li> */}
                 <li>
                     <button className="shoppingCart">
-                        <i class="fa-solid fa-cart-shopping"></i>
+                        <i className="fa-solid fa-cart-shopping"></i>
                         <span className="cart">0</span>
                     </button>
                 </li>
