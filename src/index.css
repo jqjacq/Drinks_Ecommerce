@@ -60,7 +60,6 @@ body {
 
 .mainimage-container .mainImage {
   width: 100%;
-  height: 500px;
 }
 .mainimage-container .logo {
   text-align: center;
@@ -101,7 +100,7 @@ body {
 
 form {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
-  padding: 1rem 5rem;
+  padding: 10px 50px;
 }
 
 .contact-header {
@@ -112,7 +111,7 @@ form {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 6px 0;
-  padding: 1rem 5rem;
+  padding: 10px 50px;
 }
 
 .contact-button {
@@ -174,7 +173,6 @@ textarea {
 .socialmedia {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
 }
 .socialmedia .fa-brands {
   color: black;
@@ -183,6 +181,83 @@ textarea {
 .socialmedia hr {
   opacity: 0.1;
 }
-.socialmedia .fa-solid {
+
+.fa-solid {
   margin-right: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  .about-container .about-headlines {
+    text-align: center;
+  }
+  .about-container .about {
+    display: block;
+  }
+  .about-container .aboutImg, .about-container .howImg, .about-container .missionImg {
+    margin-top: 10px;
+    width: 100px;
+    height: 75px;
+  }
+  .about-container .about-info {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 0.75rem;
+  }
+  h1 {
+    font-size: 1rem;
+  }
+  .navBar-container ul {
+    display: block;
+  }
+  .navBar-container li {
+    display: block;
+    text-align: center;
+  }
+  .navBar-container li:hover {
+    font-weight: bold;
+  }
+  .navBar-container .shoppingCart {
+    margin-left: 175px;
+    background-color: rgba(212, 212, 212, 0.5);
+  }
+  .additionalinfo ul {
+    display: block;
+  }
+  .additionalinfo li:hover {
+    font-weight: bold;
+  }
+  .aboutImg, .howImg, .missionImg {
+    display: none;
+  }
+  .mainimage-container .mainImage {
+    width: 100%;
+    height: 25%;
+  }
+  .productimage-container {
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .productimage-container .coffeeteaImage {
+    width: 50px;
+    height: 50px;
+  }
+  .buy {
+    font-size: 0.75rem;
+  }
+  form {
+    font-size: 0.75rem;
+    padding: 0;
+  }
+  .contact-box {
+    display: inline-block;
+    width: 100px;
+    padding: 0;
+  }
+  .contact-button {
+    margin-left: 15vw;
+    padding: 0;
+  }
 }/*# sourceMappingURL=index.css.map */

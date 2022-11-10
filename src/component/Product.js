@@ -11,7 +11,9 @@ export default function Product() {
         )
     return (
             <div className="product-container">
-                <h1 className="product-header"> Our Products</h1>
+                <h1 className="product-header"> 
+                <i className="fa-solid fa-bag-shopping"></i>
+                    Our Products</h1>
                 <div className="productimage-container">
                     {TeaCoffee}
                 </div>

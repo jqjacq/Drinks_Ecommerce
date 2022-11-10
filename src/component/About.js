@@ -7,11 +7,12 @@ export default function About(props) {
     return (
         <div>
             <div className="about-container">
-            <h1 className="about-header">About us</h1>
+                <h1 className="about-header">
+                <i className="fa-solid fa-mug-hot"></i>About us</h1>
                 <section className="about-headlines">How we started
                     <div className="about">
                         <img className="howImg" src="../img/howwestarted.jpg" alt="anothercupoftea"></img>
-                        <p>
+                        <p class="about-info">
                         It all began with our passion for tea and coffee.<br></br>
                         We love drinking tea and coffee.<br></br>
                         Thus, we decided to open our store.<br></br>
@@ -24,7 +25,7 @@ export default function About(props) {
                 <section className="about-headlines">About our tea and coffee
                     <div className="about">
                         <img className="aboutImg" src="../img/aboutimage.jpg" alt="cupoftea"></img>
-                        <p>
+                        <p class="about-info">
                         We can guarantee that our tea and coffee are of the best quality. <br></br>
                         We traveled and sampled tea and coffee from other parts of the world. <br></br>
                         Our tea and coffee are from the most well-known tea- and coffee-producing countries. <br></br>
@@ -38,7 +39,7 @@ export default function About(props) {
                 <section className="about-headlines">Our mission
                     <div className="about">
                         <img className="missionImg" src="../img/mission.jpg" alt="colorfultea"></img>
-                        <p>
+                        <p class="about-info">
                         Our mission is to provide customers with the finest quality teas and coffees.  <br></br>
                         We sell it at a reasonable, fair, and affordable price.  <br></br>
                         Not only that, 20% of our profits go to nonprofit organizations.   <br></br>

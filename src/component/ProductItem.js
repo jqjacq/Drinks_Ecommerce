@@ -13,7 +13,10 @@ export default function ProductItem(props) {
             />
             <p className = "coffeeteaType"> {props.data.type} </p>
             <p>{props.data.pricePerLb} 
-            <button className="buy"> BUY</button> 
+            <button className="buy"
+                onClick={()=> setButtonPopup(true)}> 
+                BUY
+            </button> 
             </p>
         </section>
         <PopUp trigger = {buttonPopup} 
@@ -23,6 +26,7 @@ export default function ProductItem(props) {
                 <img src = {props.data.img} className="coffeeteaImage" alt = {props.data.type}/>
                 <h3> Taste Description: {props.data.description} </h3>
                 <h3> {props.data.pricePerLb} </h3>
+                <button className="buy"> BUY </button> 
             </div>
         </PopUp>
      </div>
