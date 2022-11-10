@@ -4,11 +4,12 @@ import React from "react"
 export default function NavBar(props) {
     return (
         <>
-        <div className="navBar-container">
-            <p className="logo">
-                 <i class="fa-solid fa-leaf fa-lg"></i>
-                 JQ's Tea and Coffee Store
-            </p>
+        <div className="navBar-container" style={{"textAlign":"center"}}> 
+            {/* <p className="navs">
+                <span className="logo">
+                    <i class="fa-solid fa-leaf fa-lg"></i>
+                    JQ's Tea and Coffee Store </span>
+            </p> */}
             <ul>
                 <li onClick={()=> props.onClick("home")}>Home</li>
                 <li onClick={()=> props.onClick("product")}>Product</li>

@@ -1,4 +1,5 @@
 import React from "react";
+import MainImage from "./component/MainImage";
 import Navbar from "./component/NavBar"
 import Footer from "./component/Footer"
 import About from "./component/About"
@@ -42,6 +43,7 @@ export default function App() {
     }
     return (
         <div>
+            <MainImage />
             <Navbar 
                 onClick = {setMyContent}
             />

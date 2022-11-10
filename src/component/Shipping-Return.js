@@ -4,7 +4,7 @@ export default function Shipping() {
     return (
         <div className="shippingReturn-container">
             <div className="shipping-container">
-                <h1> 
+                <h1 className="shipping-header" style={{"textAlign":"center"}}> 
                     <i class="fa-solid fa-truck-fast"></i>
                     Shipping Info
                 </h1>
@@ -21,7 +21,7 @@ export default function Shipping() {
                 <p> How is shipping price calculated?</p>
                 <p> Where is my order?</p>
             </div>
-            <div className="return-container">
+            <div className="return-container" style={{"textAlign":"center"}}>
                 <h1> 
                     <i class="fa-solid fa-box"></i>
                     Returns </h1>

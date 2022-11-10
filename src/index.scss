@@ -1,22 +1,22 @@
-$contactfont: 1rem;
 $contactpadding: 1rem 5rem;
+
 * {
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
 }
 body {
-    display: flex;
     justify-content: center;
 }
-
+//TEXT-ALIGN-CENTER 
+.copyright .submit-button {
+    text-align: center;
+}   
 //ABOUT {
+
 .about-container {
     .about {
         display: flex;
         font-weight: normal;
-    }
-    .about-header {
-        text-align: center;
     }
     .about-headlines {
         font-weight: bold;
@@ -35,19 +35,12 @@ body {
 
 //NAV BAR
 .navBar-container {
-    display: flex;
-    position: relative;
-    .logo {
-        font-weight: bold;
-        padding: 5px 0px;
-        background-color: rgb(173, 237, 173);
-    }
     ul {
         list-style-type: none;
         display: inline-flex;
     }
         li {
-            margin-right: 1rem;
+            margin-right: 15px;
         &:hover {
             font-style: italic;
             cursor: pointer;
@@ -62,8 +55,8 @@ body {
         width: 150px;
     }
     .shoppingCart {
-        border: lightgreen;
-        background-color: lightgreen;
+        border: rgb(40, 121, 40, 0.5);
+        background-color: rgb(40, 121, 40, 0.3);
         padding: 5px 10px;
         cursor: pointer;
     }
@@ -74,17 +67,24 @@ body {
     .mainImage {
         width: 100%;
         height: 500px;
-    }
+    }    
+    .logo {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+        padding: 16px 0px;
+        background-color: rgb(99, 200, 99);
 }
 
 //PRODUCT 
-.product-header {
-    text-align: center;
-}
 .productimage-container {
     display: grid;
     grid-template-rows: 1fr 1fr, 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
 }
 .coffeeteaType {
     font-weight: bold;
@@ -101,8 +101,8 @@ body {
 .buy {
     margin-left: 5px;
     cursor: pointer;
+    }
 }
-//POP UP DETAIL
 
 
 //CONTACT
@@ -113,24 +113,17 @@ form {
 .fa-regular {
     margin-right: 5px;
 }
-.contact-headline {
-    text-align: center;
-    font-size: $contactfont;
-}
-.contact-container {
+
+.contact-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6px 0;
-    font-size: $contactfont;
     padding: $contactpadding;
 }
 textarea {
     resize: none;
 }
-.submit-button {
-    text-align: center;
-        margin: 5px 0;
-    }
+
     .contact-button {
         width: 150px;
         padding: 5px;
@@ -185,9 +178,7 @@ footer {
     hr {
         opacity: 0.1;
     }
-    .copyright {
-        text-align: center;
-    }
+
 }
 .fa-solid {
     margin-right: 5px;
