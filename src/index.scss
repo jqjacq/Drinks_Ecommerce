@@ -69,17 +69,16 @@ body {
 //MAIN IMAGE 
 .mainimage-container {
     .mainImage {
+        margin: auto;
         width: 100%;
     }    
     .logo {
-        text-align: center;
         position: absolute;
         width: 100%;
-        top: 0;
         left: 0;
+        top: 0;
         font-weight: bold;
         padding: 16px 0px;
-        background-color: rgb(99, 200, 99);
     }
 }
 
@@ -208,6 +207,10 @@ form {
         .about-info {
             text-align:left;
         }
+    }
+    .productimage-container {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
