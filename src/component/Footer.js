@@ -26,7 +26,7 @@ export default function Footer(props) {
             </p>
             <hr></hr>
             <div className="copyright">
-                <span>COPYRIGHT © JQ Tea and Coffee Co., All rights reserved</span> 
+                <span>COPYRIGHT © JQ's Coffee & Tea Co., All rights reserved</span> 
                 <span>· THIS IS NOT AN ACTUAL PRODUCT FOR SALE.</span> 
             </div>
         </footer>

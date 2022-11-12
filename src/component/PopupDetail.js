@@ -10,6 +10,7 @@ export default function PopUp(props) {
         window.addEventListener('keydown', close)
       return () => window.removeEventListener('keydown', close)
     },[props])
+
     return (props.trigger) ? (
         <div className="popup">
             <div className="popup-inner">
