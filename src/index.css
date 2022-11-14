@@ -185,6 +185,9 @@ textarea {
   margin-right: 5px;
 }
 
+.dropdown-menu {
+  display: none;
+}
 @media screen and (max-width: 600px) {
   .about-container .about-headlines {
     text-align: center;

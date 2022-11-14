@@ -6,9 +6,13 @@ import About from "./component/About"
 import Contact from "./component/Contact"
 import Product from "./component/Product"
 import ShippingReturn from "./component/Shipping-Return"
+import Menu from "./component/Menu"
+import Tea from "./component/Tea"
+import Coffee from "./component/Coffee"
 
 export default function App() {
     const [MyContent, setMyContent] = React.useState("home")
+    // const [cartItem, setCartItems] = useState([])
     const Content = () => {
         if (MyContent === "home") {
             return (
@@ -33,7 +37,26 @@ export default function App() {
                 <ShippingReturn />
                 </>
             )
-        } else {
+        } else if (MyContent === "menu") {
+            return (
+                <>
+                <Menu />
+                </>
+            )
+        } else if(MyContent === "coffee") {
+            return (
+                <>
+                <Coffee />
+                </>
+            )
+        } else if (MyContent === "tea") {
+            return(
+                <>
+                <Tea />
+                </>    
+            )
+        }
+        else { 
             return (
                 <>
                 <Contact />
