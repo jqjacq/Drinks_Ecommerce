@@ -7,20 +7,20 @@ export default function NavBar(props) {
         <>
         <div className="navBar-container"> 
             <ul className="navlinks">
-                <li className="homes" onClick={()=> props.onClick("home")}>Home</li>
-                <li onClick={()=> props.onClick("product")}>
+                <li className="homelink" onClick={()=> props.onClick("home")}>Home</li>
                     <div className="dropdown">
+                <li onClick={()=> props.onClick("product")}>
                         <li className="btn dropdown-toggle" data-bs-toggle="dropdown">
-                            Product
+                        Products
                             <li className="dropdown-menu">
                                 <li onClick={()=> props.onClick("menu")} className="dropdown-item">Full Menu</li>
                                 <li onClick={()=> props.onClick("coffee")} className="dropdown-item">Coffee</li>
                                 <li onClick={()=> props.onClick("tea")} className="dropdown-item">Tea</li>
                             </li>
                         </li>
-                    </div>
                 </li>
-                <li onClick={()=> props.onClick("contact")}>Contact</li>
+                </div>
+                <li className="contactlink" onClick={()=> props.onClick("contact")}>Contact</li>
                 {/* <li> <SearchList /> </li> */}
                 {/* <li>
                     <input type="text" className="search" placeholder="Search..."></input> 

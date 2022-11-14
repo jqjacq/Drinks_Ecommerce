@@ -48,7 +48,7 @@ body {
         &:hover {
             font-style: italic;
             cursor: pointer;
-    }
+        }
         &:active {
             font-weight: bold;
         }
@@ -65,13 +65,9 @@ body {
         cursor: pointer;
     }
 }
-
-//DROPDOWN
-    .btn .dropdown-toggle {
-        padding: 0;
-        display: block;
-        --bs-btn-padding-x: 0;
-    }
+li.homelink, li.contactlink {
+    padding-top: .375rem;
+}
 //MAIN IMAGE 
 .mainimage-container {
     .mainImage {
@@ -242,7 +238,7 @@ form {
         }
         .shoppingCart { 
             margin-left: 175px;
-            background-color: rgb(212, 212, 212,0.5);
+            background-color: rgba(212, 212, 212,0.5);
         }
     }
 
