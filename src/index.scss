@@ -39,12 +39,12 @@ body {
 
 //NAV BAR
 .navBar-container {
-    ul {
+    .navlinks {
+        display:inline-flex;
         list-style-type: none;
-        display: inline-flex;
     }
-        li {
-            margin-right: 15px;
+    li {
+        margin-right: 15px;
         &:hover {
             font-style: italic;
             cursor: pointer;
@@ -59,13 +59,19 @@ body {
         width: 150px;
     }
     .shoppingCart {
-        border: rgb(40, 121, 40, 0.5);
-        background-color: rgb(40, 121, 40, 0.3);
+        border: rgba(40, 121, 40, 0.5);
+        background-color: rgba(40, 121, 40, 0.3);
         padding: 5px 10px;
         cursor: pointer;
     }
 }
 
+//DROPDOWN
+    .btn .dropdown-toggle {
+        padding: 0;
+        display: block;
+        --bs-btn-padding-x: 0;
+    }
 //MAIN IMAGE 
 .mainimage-container {
     .mainImage {
@@ -108,6 +114,7 @@ body {
     cursor: pointer;
     }
 }
+
 //CONTACT
 form {
     font-size: clamp(1rem, 2.5vw, 1.5rem);
@@ -227,7 +234,7 @@ form {
             display: block;
         }
         li {
-            display: block;
+            display: inline;
             text-align: center;
                 &:hover {
                 font-weight: bold;

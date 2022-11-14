@@ -6,16 +6,18 @@ export default function NavBar(props) {
     return (
         <>
         <div className="navBar-container"> 
-            <ul>
-                <li onClick={()=> props.onClick("home")}>Home</li>
+            <ul className="navlinks">
+                <li className="homes" onClick={()=> props.onClick("home")}>Home</li>
                 <li onClick={()=> props.onClick("product")}>
-                    <div class="dropdown">
-                        <li class="btn dropdown-toggle" data-bs-toggle="dropdown">Product</li>
-                        <ul class="dropdown-menu">
-                            <li onClick={()=> props.onClick("menu")} className="dropdown-item">Full Menu</li>
-                            <li onClick={()=> props.onClick("coffee")} className="dropdown-item">Coffee</li>
-                            <li onClick={()=> props.onClick("tea")} className="dropdown-item">Tea</li>
-                        </ul>
+                    <div className="dropdown">
+                        <li className="btn dropdown-toggle" data-bs-toggle="dropdown">
+                            Product
+                            <li className="dropdown-menu">
+                                <li onClick={()=> props.onClick("menu")} className="dropdown-item">Full Menu</li>
+                                <li onClick={()=> props.onClick("coffee")} className="dropdown-item">Coffee</li>
+                                <li onClick={()=> props.onClick("tea")} className="dropdown-item">Tea</li>
+                            </li>
+                        </li>
                     </div>
                 </li>
                 <li onClick={()=> props.onClick("contact")}>Contact</li>
