@@ -1,10 +1,10 @@
 import React from "react"
-import teaData from "../data/teadata"
-import ProductItem from "./ProductItem"
+import coffeeData from "../data/coffeedata"
+import CoffeeItem from "./CoffeeItem"
 
 export default function Tea() {
-    const Tea = teaData.map(data => 
-            <ProductItem 
+    const Coffee = coffeeData.map(data => 
+            <CoffeeItem 
                 key = {data.type}
                 data = {data}
             />
@@ -13,9 +13,9 @@ export default function Tea() {
             <div className="product-container">
                 <h1 className="product-header"> 
                 <i className="fa-solid fa-bag-shopping"></i>
-                    Teas </h1>
+                    Coffee </h1>
                 <div className="productimage-container">
-                    {Tea}
+                    {Coffee}
                 </div>
             </div>
     )

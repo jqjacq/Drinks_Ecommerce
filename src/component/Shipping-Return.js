@@ -15,11 +15,25 @@ export default function Shipping() {
                     <li>Expedited 2-day shipping will cost $24.99. </li>
                     <li>Any order exceeding over 10lb will have additional charge. Additional charge would be additional $2.99 standard/$7.99 expedited for each additional pound. </li>
                 </ol>
-                <p> How are orders shipped?</p>
-                <p> When do orders ship?</p>
-                <p> Do you ship internationally? </p>
-                <p> How is shipping price calculated?</p>
-                <p> Where is my order?</p>
+                <p className="shipping-question"> How are my orders shipped?</p>
+                    The coffee beans are placed inside a sealed bag to prevent oxygen from reaching inside. 
+                    The coffee will be protected with bubble wrap as a protective barrier 
+                    The coffee will be shipped through the post office. 
+                    
+                <p className="shipping-question"> When do orders ship?</p>
+                    Once we receive the orders, it will take 1-3 business day for us to prepare the order.
+                    Once the order has been prepared, we will immediately ship it through the post office.
+                    
+                <p className="shipping-question"> Do you ship internationally? </p>
+                    If the shipping address is outside of US, there will be an additional $15.00 for shipping. 
+                    Standand shipping will cost $23.99 and expedited shipping will cost $39.99.
+                    
+                <p className="shipping-question"> How is shipping price calculated?</p>
+                    The shipping price is calculated based on amount purchase and weight. For any order over $99, you will receive free shipping. 
+                    If the order exceeds over 10lb, there will be additional charges. See shipping info for what the additional charge will be. 
+                    
+                <p className="shipping-question"> Where is my order?</p>
+                    Once your order is shipped, a tracking number will be assigned and you will receive your order information. 
             </div>
             <div className="return-container" style={{"textAlign":"center"}}>
                 <h1> 
