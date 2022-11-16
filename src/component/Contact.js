@@ -3,7 +3,7 @@ import React from "react"
 export default function Contact() {
     return (
         <div className="contact-container">
-            <h1 className="contact-header"><i class="fa-solid fa-address-card"></i>Contact us</h1>
+            <h1 className="contact-header"><i class="fa-solid fa-address-card contacthead"></i>Contact us</h1>
             <form>
                 <fieldset>
                     <p className="contact-subhead">Got any questions, suggestions, or concerns? Feel free to let us know!</p>

@@ -32,6 +32,10 @@ body {
   padding: 5px 10px;
 }
 
+.abouthead {
+  opacity: 0.5;
+}
+
 .navBar-container .navlinks {
   display: inline-flex;
   list-style-type: none;
@@ -83,6 +87,7 @@ li.homelink, li.contactlink {
   display: grid;
   grid-template-rows: 1fr 1fr, 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-top: 20px;
 }
 .productimage-container .coffeeteaType {
   font-weight: bold;
@@ -99,6 +104,21 @@ li.homelink, li.contactlink {
 .productimage-container .buy {
   margin-left: 5px;
   cursor: pointer;
+}
+
+.coffeehead {
+  color: blue;
+  opacity: 0.5;
+}
+
+.teahead {
+  color: green;
+  opacity: 0.5;
+}
+
+.allhead {
+  color: red;
+  opacity: 0.5;
 }
 
 form {
@@ -149,13 +169,32 @@ textarea {
   text-align: center;
 }
 
+.contacthead {
+  color: orange;
+  opacity: 0.5;
+}
+
+.shipping-container {
+  padding: 10px 50px;
+}
+
 .shipping-question {
   font-weight: bold;
   padding-top: 15px;
 }
 
 .return-container {
-  padding-top: 30px;
+  padding: 10px 100px;
+}
+
+.shippinghead {
+  color: purple;
+  opacity: 0.5;
+}
+
+.returnhead {
+  color: brown;
+  opacity: 0.5;
 }
 
 .footer {

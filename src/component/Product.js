@@ -12,7 +12,7 @@ export default function Product() {
     return (
             <div className="product-container">
                 <h1 className="product-header"> 
-                <i className="fa-solid fa-bag-shopping"></i>
+                <i className="fa-solid fa-bag-shopping allhead"></i>
                     All Products </h1>
                 <div className="productimage-container">
                     {TeaCoffee}

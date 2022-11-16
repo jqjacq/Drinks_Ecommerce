@@ -5,7 +5,7 @@ export default function Shipping() {
         <div className="shippingReturn-container">
             <div className="shipping-container">
                 <h1 className="shipping-header" style={{"textAlign":"center"}}> 
-                    <i class="fa-solid fa-truck-fast"></i>
+                    <i className="fa-solid fa-truck-fast shippinghead"></i>
                     Shipping Info
                 </h1>
                 <h3> We offer different shipping options: </h3>
@@ -37,7 +37,7 @@ export default function Shipping() {
             </div>
             <div className="return-container" style={{"textAlign":"center"}}>
                 <h1> 
-                    <i class="fa-solid fa-box"></i>
+                    <i class="fa-solid fa-box returnhead"></i>
                     Returns </h1>
                 <p>
                     To make sure you are completely satisfied, you may return the coffee within 45 days of the purchase date for a full refund (excluding shipping and handling). Shipping and handling charges are non-refundable. Please allow at least 1-2 weeks for refund and processing time.

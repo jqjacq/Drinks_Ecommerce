@@ -12,7 +12,7 @@ export default function Tea() {
         return (
             <div className="product-container">
                 <h1 className="product-header"> 
-                <i className="fa-solid fa-bag-shopping"></i>
+                <i className="fa-solid fa-mug-hot coffeehead"></i>
                     Coffee </h1>
                 <div className="productimage-container">
                     {Coffee}
