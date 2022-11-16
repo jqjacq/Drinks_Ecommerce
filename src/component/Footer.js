@@ -17,13 +17,13 @@ export default function Footer(props) {
                 <a href="https://www.youtube.com" alt="YouTube Page">
                 <i className="fa-brands fa-2x fa-youtube"></i></a>
             </p>
-            <p className="additionalinfo">
+            <span className="additionalinfo">
                 <ul>
                     <li onClick={()=> props.onClick("about")}>About us</li>
                     <li onClick={()=> props.onClick("shipping/return")}>Shipping & Return </li>
                     <li onClick={()=> props.onClick("contact")}>Feedbacks</li>
                 </ul>
-            </p>
+            </span>
             <hr></hr>
             <div className="copyright">
                 <span>COPYRIGHT © JQ's Coffee & Tea Co., All rights reserved</span> 

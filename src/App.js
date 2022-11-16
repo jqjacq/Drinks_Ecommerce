@@ -6,7 +6,6 @@ import About from "./component/About"
 import Contact from "./component/Contact"
 import Product from "./component/Product"
 import ShippingReturn from "./component/Shipping-Return"
-import Menu from "./component/Menu"
 import Tea from "./component/Tea"
 import Coffee from "./component/Coffee"
 
@@ -35,12 +34,6 @@ export default function App() {
             return (
                 <>
                 <ShippingReturn />
-                </>
-            )
-        } else if (MyContent === "menu") {
-            return (
-                <>
-                <Menu />
                 </>
             )
         } else if(MyContent === "coffee") {

@@ -9,15 +9,15 @@ export default function NavBar(props) {
             <ul className="navlinks">
                 <li className="homelink" onClick={()=> props.onClick("home")}>Home</li>
                     <div className="dropdown">
-                <li onClick={()=> props.onClick("product")}>
-                        <li className="btn dropdown-toggle" data-bs-toggle="dropdown">
+                <li>
+                    <span className="btn dropdown-toggle" data-bs-toggle="dropdown">
                         Products
-                            <li className="dropdown-menu">
-                                <li onClick={()=> props.onClick("menu")} className="dropdown-item">Full Menu</li>
+                            <ul className="dropdown-menu">
+                                <li onClick={()=> props.onClick("product")} className="dropdown-item">Full Menu</li>
                                 <li onClick={()=> props.onClick("coffee")} className="dropdown-item">Coffee</li>
                                 <li onClick={()=> props.onClick("tea")} className="dropdown-item">Tea</li>
-                            </li>
-                        </li>
+                            </ul>
+                    </span>
                 </li>
                 </div>
                 <li className="contactlink" onClick={()=> props.onClick("contact")}>Contact</li>

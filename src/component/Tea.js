@@ -1,10 +1,10 @@
 import React from "react"
 import teaData from "../data/teadata"
-import ProductItem from "./ProductItem"
+import TeaItem from "./TeaItem"
 
 export default function Tea() {
     const Tea = teaData.map(data => 
-            <ProductItem 
+            <TeaItem 
                 key = {data.type}
                 data = {data}
             />

@@ -13,7 +13,7 @@ export default function Product() {
             <div className="product-container">
                 <h1 className="product-header"> 
                 <i className="fa-solid fa-bag-shopping"></i>
-                    Our Products</h1>
+                    All Products </h1>
                 <div className="productimage-container">
                     {TeaCoffee}
                 </div>
