@@ -8,7 +8,7 @@ export default function About(props) {
         <div>
             <div className="about-container">
                 <h1 className="about-header">
-                <i class="fa-solid fa-house-user abouthead"></i>About us</h1>
+                <i className="fa-solid fa-house-user abouthead"></i>About us</h1>
                 <section className="about-headlines">How we started
                     <div className="about">
                         <img className="howImg" src="../img/howwestarted.jpg" alt="anothercupoftea"></img>
