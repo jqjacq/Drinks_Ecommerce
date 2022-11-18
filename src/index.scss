@@ -168,10 +168,13 @@ form {
     .location-container {
         text-align: center;
     }
-.contacthead {
-    color: orange;
-    opacity: 0.5;
-}
+    .contacthead {
+        color: orange;
+        opacity: 0.5;
+    }
+    .submit-button {
+        padding: 30px 10px;
+    }
 //SHIPPING
 .shipping-container {
     padding: 10px 50px;
