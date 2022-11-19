@@ -1,3 +1,7 @@
+//To test out contact being submitted, use npx json-server --watch src/data/contactinfo.json --port 8000
+// --port: 8000 since that is where the data is being fetched.
+// submitted data will show up on contactinfo.json file
+
 import React, { useState } from "react"
 
 export default function Contact() {
@@ -6,11 +10,22 @@ export default function Contact() {
     const [phonenumber, setPhoneNumber] = useState("")
     const [message, setMessage] = useState("")
     const [preference, setPreference] = useState("")
-     const handleSubmit = (e) => {
+    const [isSubmitting, setisSubmitting] = useState(false)
+    
+    const handleSubmit = (e) => {
         e.preventDefault()
-        const contactinfo = { name, email, phonenumber, message, preference }
+        const timestamp = new Date()
+        const contactinfo = { name, email, phonenumber, message, preference, timestamp }
 
-        console.log(contactinfo)
+        setisSubmitting(true)
+
+        fetch(' http://localhost:8000/contactinfo', {
+            method: 'POST',
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(contactinfo)
+        }).then(() => {
+            setisSubmitting(false)
+        })
     }
     return (
         <div className="contact-container">
@@ -56,7 +71,8 @@ export default function Contact() {
                         </select>
                     </div>
                     <div className="submit-button">
-                    <button className="contact-button" type="submit">Submit</button>
+                        { !isSubmitting && <button className="contact-button" type="submit">Submit</button> }
+                        { isSubmitting && <button className="contact-button" type="submit" style={{"width":"400px"}}>Submitting... Stuck on load because server is currently not running.</button> }
                     </div>
                 </fieldset>
 
