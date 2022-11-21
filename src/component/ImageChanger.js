@@ -29,7 +29,7 @@ class ImageChanger extends React.Component {
       }
     
     timeImage() {
-        setInterval(this.switchImage, 3500);
+        setInterval(this.switchImage, 4000);
       }
 
     render() {
