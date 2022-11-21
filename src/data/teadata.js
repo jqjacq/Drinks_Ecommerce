@@ -1,4 +1,4 @@
-const teass = [{
+const teas = [{
     category: "Tea",
     type:"Green Tea",
     img: "img/teas/green.jpg", 
@@ -71,4 +71,4 @@ const teass = [{
 }
     ]
 
-export default teass
+export default teas
