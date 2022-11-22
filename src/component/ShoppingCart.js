@@ -1,17 +1,26 @@
 import React from "react";
 
-const Cart = ({ cartItems }) => {
+export default function Cart() {
     return (
-        <div className="cart-items">
-            <div className="cart-header">
-                Cart Items
+        <div>
+            <header><h1 className="cart-header"> Shopping Cart</h1></header>
+            <div className="row"> 
+                <main className="col-2">
+                    <h3 className="cart-section">Your Bag</h3>
+                </main>
+                <aside className="col-1">
+                    <h3 className="cart-section">Order Summary</h3>
+                    <p> Subtotal: </p>
+                    <p> Shipping & Handling: </p>
+                    <p> Tax: </p>
+                    <hr></hr>
+                    <p className="total"> Total </p>
+                    <hr></hr>
+                    <button> Checkout </button>
+                </aside>
+
             </div>
-
-            {cartItems.length === 0 &&<div> No items are added. 
-            </div>}
-
         </div>
+        
     )
 }
-
-export default Cart

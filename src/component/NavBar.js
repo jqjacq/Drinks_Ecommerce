@@ -27,7 +27,7 @@ export default function NavBar(props) {
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </li> */}
                 <li>
-                     <button className="shoppingCart">
+                     <button className="shoppingCart" onClick={()=> props.onClick("cart")}>
                         <i className="fa-solid fa-cart-shopping"></i>
                         <span className="cart">0</span>
                     </button>

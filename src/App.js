@@ -8,6 +8,7 @@ import Product from "./component/Product"
 import ShippingReturn from "./component/Shipping-Return"
 import Tea from "./component/Tea"
 import Coffee from "./component/Coffee"
+import Cart from "./component/ShoppingCart"
 
 export default function App() {
     const [MyContent, setMyContent] = React.useState("home")
@@ -47,6 +48,12 @@ export default function App() {
                 <>
                 <Tea />
                 </>    
+            )
+        } else if (MyContent === "cart") {
+            return (
+                <>
+                <Cart />
+                </>
             )
         }
         else { 
