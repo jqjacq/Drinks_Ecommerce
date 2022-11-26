@@ -46,13 +46,15 @@ export default function App() {
         } else if(MyContent === "coffee") {
             return (
                 <>
-                <Coffee />
+                <Coffee 
+                    onAdd = { onAdd }/>
                 </>
             )
         } else if (MyContent === "tea") {
             return(
                 <>
-                <Tea />
+                <Tea 
+                    onAdd = { onAdd }/>
                 </>    
             )
         } else if (MyContent === "cart") {

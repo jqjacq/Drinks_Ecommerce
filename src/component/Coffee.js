@@ -2,11 +2,13 @@ import React from "react"
 import coffeeData from "../data/coffeedata"
 import CoffeeItem from "./CoffeeItem"
 
-export default function Tea() {
+export default function Tea(props) {
+    const { onAdd } = props
     const Coffee = coffeeData.map(data => 
             <CoffeeItem 
                 key = {data.type}
                 data = {data}
+                onAdd = {onAdd}
             />
         )
         return (
