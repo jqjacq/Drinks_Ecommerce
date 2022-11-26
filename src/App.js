@@ -23,7 +23,6 @@ export default function App() {
         } else {
             setCartItems([...cartItems, {...product, qty: 1}])
         }
-        console.log(cartItems)
     }
     const [MyContent, setMyContent] = React.useState("home")
     const Content = () => {

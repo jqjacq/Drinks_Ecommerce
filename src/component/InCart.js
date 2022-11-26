@@ -2,9 +2,8 @@ import React from "react"
 
 export default function InCart(props) {
     const { cartItems, onAdd } = props 
-    console.log(cartItems)
     const EmptyCart = () => {
-        if (cartItems === undefined) {
+        if (cartItems.length === 0) {
             return (
                 <div> Cart is empty. </div> 
             )
