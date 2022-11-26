@@ -6,7 +6,10 @@ import {Box, InputLabel, MenuItem, FormControl, Select } from "@mui/material"
 
 export default function ProductItem(props) {
     const [price, setPrice] = React.useState('');
-
+    const { onAdd } = props
+    const addProduct = () => {
+        onAdd({id: props.data.type }) 
+    }
     const handleChange = (event) => {
       setPrice(event.target.value);
     };
@@ -46,7 +49,7 @@ export default function ProductItem(props) {
                             </Select>
                         </FormControl>
                     </Box>
-                    <Button variant="outlined" size="small" color="success" className="buy"> 
+                    <Button onClick = {addProduct} variant="outlined" size="small" color="success" className="buy"> 
                         Add to cart 
                     </Button> 
                 </div>

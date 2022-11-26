@@ -15,7 +15,7 @@ export default function PopUp(props) {
         <div className="popup">
             <div className="popup-inner">
                 <button className="close-btn" onClick={() => props.setTrigger(false)}> 
-                    <i class="fa-solid fa-x"></i>
+                    <i className="fa-solid fa-x"></i>
                 </button>
                 { props.children }
             </div>

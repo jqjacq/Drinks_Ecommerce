@@ -1,9 +1,6 @@
 import React from "react"
 
 export default function About(props) {
-    // const center = {
-    //     textAlign: 'center'
-    // }
     return (
         <div>
             <div className="about-container">

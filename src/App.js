@@ -8,27 +8,34 @@ import Product from "./component/Product"
 import ShippingReturn from "./component/Shipping-Return"
 import Tea from "./component/Tea"
 import Coffee from "./component/Coffee"
-import Cart from "./component/ShoppingCart"
+import ShoppingCart from "./component/ShoppingCart"
 
 export default function App() {
+    const [cartItems, setCartItems] = React.useState([])
+    const onAdd = (product) => {
+        const exist = cartItems.find((x) => x.id === product.id)
+        if (exist) {
+            setCartItems (
+                cartItems.map((x) => 
+                x.id === product.id ? {...exist, qty: exist.qty + 1} : x
+                )
+            )
+        } else {
+            setCartItems([...cartItems, {...product, qty: 1}])
+        }
+        console.log(cartItems)
+    }
     const [MyContent, setMyContent] = React.useState("home")
-    // const [cartItem, setCartItems] = useState([])
     const Content = () => {
-        if (MyContent === "home") {
+        if (MyContent === "home" || MyContent === "about") {
             return (
                 <About />
             )
         }
         else if (MyContent === "product") {
             return (
-                <Product />
-            )
-        }
-        else if (MyContent === "about") {
-            return (
-                <>
-                <About />
-                </>
+                <Product 
+                    onAdd = { onAdd }/>
             )
         }
         else if (MyContent === "shipping/return") {
@@ -52,7 +59,9 @@ export default function App() {
         } else if (MyContent === "cart") {
             return (
                 <>
-                <Cart />
+                <ShoppingCart 
+                    cartItems = { cartItems }
+                    onAdd = { onAdd }/>
                 </>
             )
         }
