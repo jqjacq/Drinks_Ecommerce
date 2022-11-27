@@ -3,6 +3,7 @@ import React from "react"
 // import SearchList from "./SearchList"
 
 export default function NavBar(props) {
+    const { onAdd } = props
     return (
         <>
         <div className="navBar-container"> 

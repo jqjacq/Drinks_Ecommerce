@@ -8,8 +8,9 @@ export default function ProductItem(props) {
     const [price, setPrice] = React.useState('');
     const { onAdd } = props
     const addProduct = () => {
-        onAdd({id: props.data.type }) 
+        onAdd({id:props.data.type }) 
     }
+    console.log(addProduct)
     const handleChange = (event) => {
       setPrice(event.target.value);
     };

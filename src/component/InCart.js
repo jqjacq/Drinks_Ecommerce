@@ -1,7 +1,7 @@
 import React from "react"
 
 export default function InCart(props) {
-    const { cartItems, onAdd } = props 
+    const { cartItems, onAdd, onRemove } = props 
     const EmptyCart = () => {
         if (cartItems.length === 0) {
             return (
@@ -13,10 +13,13 @@ export default function InCart(props) {
         if (cartItems) {
             return (cartItems.map((item) => (
                 <div key={cartItems.id}>
-                    <div> {cartItems.name}</div>
+                    <div className="row"> 
+                        {cartItems.name}
+                    </div>
+                        <div>{item.name} </div>
                     <div>
                         <button onClick={()=>onAdd(item)} className="add">+</button>
-                        {/* <button onClick={()=>onRemove(item)} className="remove">-</button> */}
+                        <button onClick={()=>onRemove(item)} className="remove">-</button>
                     </div>
                 </div>
                 ))
