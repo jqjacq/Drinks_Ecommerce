@@ -10,11 +10,19 @@ export default function Cart(props) {
                 <InCart onAdd={onAdd} cartItems={cartItems}></InCart>
                 <aside className="col-1">
                     <h3 className="cart-section">Order Summary</h3>
-                    <p> Subtotal: </p>
-                    <p> Shipping & Handling: </p>
-                    <p> Tax: </p>
+                    <p> Subtotal: 
+                        <span className="calculation">$0.00</span>
+                    </p>
+                    <p> Shipping & Handling: 
+                        <span className="calculation">$0.00</span>
+                    </p>
+                    <p> Tax: 
+                        <span className="calculation">$0.00</span>
+                    </p>
                     <hr></hr>
-                    <p className="total"> Total </p>
+                    <p className="total"> Total 
+                        <span className="calculation">$0.00</span>
+                    </p>
                     <hr></hr>
                     <button> Checkout </button>
                 </aside>
