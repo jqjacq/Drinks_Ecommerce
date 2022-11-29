@@ -2,12 +2,12 @@ import React from "react";
 import InCart from "./InCart"
 
 export default function Cart(props) {
-    const { cartItems, onAdd } = props
+    const { cartItems, onAdd, onRemove } = props
     return (
         <div>
             <header><h1 className="cart-header"> Shopping Cart</h1></header>
             <div className="row"> 
-                <InCart onAdd={onAdd} cartItems={cartItems}></InCart>
+                <InCart onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}></InCart>
                 <aside className="col-1">
                     <h3 className="cart-section">Order Summary</h3>
                     <p> Subtotal: 

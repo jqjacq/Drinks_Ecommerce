@@ -8,7 +8,9 @@ export default function TeaItem(props) {
     const [price, setPrice] = React.useState('');
     const { onAdd } = props
     const addProduct = () => {
-        onAdd({id: props.data.type }) 
+        onAdd({id:props.data.type, 
+            img: props.data.img, 
+            weight:props.data.pricePerLb})
     }
     const handleChange = (event) => {
       setPrice(event.target.value);

@@ -2,6 +2,7 @@ import React from "react"
 
 export default function InCart(props) {
     const { cartItems, onAdd, onRemove } = props 
+
     const EmptyCart = () => {
         if (cartItems.length === 0) {
             return (
@@ -12,14 +13,17 @@ export default function InCart(props) {
     const ShowCart = () => {
         if (cartItems) {
             return (cartItems.map((item) => (
-                <div key={cartItems.id}>
+                <div key={item.id}>
                     <div className="row"> 
-                        {cartItems.name}
-                    </div>
-                        <div>{item.name} </div>
-                    <div>
-                        <button onClick={()=>onAdd(item)} className="add">+</button>
-                        <button onClick={()=>onRemove(item)} className="remove">-</button>
+                        <span>
+                            {item.id}
+                            <span className="calculation">
+                                <button onClick={()=>onAdd(item)} className="add">+</button>
+                                {item.quantity}
+                                <button onClick={()=>onRemove(item)} className="remove">-</button>
+                            </span>
+                            {/* {item.weight}  */}
+                        </span>
                     </div>
                 </div>
                 ))
