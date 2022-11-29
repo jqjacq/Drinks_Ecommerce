@@ -28,8 +28,8 @@ export default function Contact() {
         })
     }
     return (
-        <div className="contact-container">
-            <h1 className="contact-header"><i className="fa-solid fa-address-card contacthead"></i>Contact us</h1>
+        <>
+            <h1 className="centertext"><i className="fa-solid fa-address-card contacthead"></i>Contact us</h1>
             <form onSubmit={handleSubmit}>
                 <fieldset>
                     <p className="contact-subhead">Got any questions, suggestions, or concerns? Feel free to let us know!</p>
@@ -70,14 +70,14 @@ export default function Contact() {
                             <option value="callme"> Call me </option>   
                         </select>
                     </div>
-                    <div className="submit-button">
-                        { !isSubmitting && <button className="contact-button" type="submit">Submit</button> }
-                        { isSubmitting && <button className="contact-button" type="submit" style={{"width":"400px"}}>Submitting... Stuck on load because server is currently not running.</button> }
+                    <div className="centertext">
+                        { !isSubmitting && <button className="contact-button bold" type="submit">Submit</button> }
+                        { isSubmitting && <button className="contact-button bold" type="submit" style={{"width":"400px"}}>Submitting... Stuck on load because server is currently not running.</button> }
                     </div>
                 </fieldset>
 
 
-            <div className = "location-container">
+            <div className = "centertext">
                 <h4> 
                 <i className="fa-solid fa-location-dot"></i>
                 Where are we located? </h4> 
@@ -87,6 +87,6 @@ export default function Contact() {
                 5555 Cafe Ave, Coffee City, CC, 54321 </p>
             </div>
             </form>
-        </div>
+        </>
     )
 }

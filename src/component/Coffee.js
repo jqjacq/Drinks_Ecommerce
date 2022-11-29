@@ -12,13 +12,13 @@ export default function Tea(props) {
             />
         )
         return (
-            <div className="product-container">
-                <h1 className="product-header"> 
+            <>
+                <h1 className="centertext"> 
                 <i className="fa-solid fa-mug-hot coffeehead"></i>
                     Coffee </h1>
                 <div className="productimage-container">
                     {Coffee}
                 </div>
-            </div>
+            </>
     )
     }

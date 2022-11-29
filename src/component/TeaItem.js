@@ -17,7 +17,7 @@ export default function TeaItem(props) {
     };
     const [buttonPopup, setButtonPopup] = React.useState(false)
     return (
-        <div>
+        <>
             <section>
                 <Tooltip title = {props.data.description} placement="top-start">
                     <img src = {props.data.img} className="coffeeteaImage" 
@@ -56,6 +56,6 @@ export default function TeaItem(props) {
                     </Button> 
                 </div>
             </PopUp>
-     </div>
+     </>
     )
 }

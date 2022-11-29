@@ -22,12 +22,11 @@ export default function ImageChange() {
   useEffect(setTimer, [cacheImage, currentImage])
 
   return (
-      <div className="mainimage-container">
+    <>
         <img
           src={cacheImage[currentImage]}
-          alt="changing cover of field of green, tea and coffee"
-        />
+          alt="changing cover of field of green, tea and coffee"/>
         <img src = "../img/jqlogo.png" className="logo" alt="JQ Logo" />
-      </div>
+    </>
   )
 }

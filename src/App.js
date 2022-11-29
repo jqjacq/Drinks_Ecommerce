@@ -1,5 +1,5 @@
 import React from "react";
-import ImageChanger from "./component/ImageChanger";
+import CoverImage from "./component/CoverImage";
 import Navbar from "./component/NavBar"
 import Footer from "./component/Footer"
 import About from "./component/About"
@@ -92,7 +92,7 @@ export default function App() {
     }
     return (
         <div>
-            <ImageChanger />
+            <CoverImage />
             <Navbar 
                 onClick = {setMyContent}
             />

@@ -17,7 +17,7 @@ export default function CoffeeItem(props) {
     };
     const [buttonPopup, setButtonPopup] = React.useState(false)
     return (
-        <div>
+        <>
             <section>
                 <Tooltip title = {props.data.description} placement="top-start">
                     <img src = {props.data.img} className="coffeeteaImage" 
@@ -25,7 +25,7 @@ export default function CoffeeItem(props) {
                         onClick={()=> setButtonPopup(true)}
                     />
                 </Tooltip>
-                    <p className = "coffeeteaType"> {props.data.type} </p>
+                    <p className = "bold"> {props.data.type} </p>
                     <p>1lb {props.data.pricePerLb} 
                         <Button variant="outlined" size="small" color="success" className="buy"
                             onClick={()=> setButtonPopup(true)}> Buy
@@ -56,6 +56,6 @@ export default function CoffeeItem(props) {
                     </Button> 
                 </div>
             </PopUp>
-     </div>
+        </>
     )
 }

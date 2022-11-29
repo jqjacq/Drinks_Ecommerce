@@ -4,8 +4,8 @@ import InCart from "./InCart"
 export default function Cart(props) {
     const { cartItems, onAdd, onRemove } = props
     return (
-        <div>
-            <header><h1 className="cart-header"> Shopping Cart</h1></header>
+        <>
+            <header><h1 className="centertext"> Shopping Cart</h1></header>
             <div className="row"> 
                 <InCart onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}></InCart>
                 <aside className="col-1">
@@ -20,7 +20,7 @@ export default function Cart(props) {
                         <span className="calculation">$0.00</span>
                     </p>
                     <hr></hr>
-                    <p className="total"> Total 
+                    <p className="bold"> Total 
                         <span className="calculation">$0.00</span>
                     </p>
                     <hr></hr>
@@ -28,7 +28,7 @@ export default function Cart(props) {
                 </aside>
 
             </div>
-        </div>
+        </>
         
     )
 }

@@ -31,6 +31,7 @@ export default function InCart(props) {
         }
     }
     return (
+        <>
         <main className="col-2">
             <h3 className="cart-section">Your Bag</h3>
             <div>
@@ -38,5 +39,6 @@ export default function InCart(props) {
                 <ShowCart />
             </div>
         </main>
+        </>
     )
 }

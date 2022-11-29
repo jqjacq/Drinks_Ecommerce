@@ -12,13 +12,13 @@ export default function Product(props) {
             />
         )
     return (
-            <div className="product-container">
-                <h1 className="product-header"> 
+            <>
+                <h1 className="centertext"> 
                 <i className="fa-solid fa-bag-shopping allhead"></i>
                     All Products </h1>
-                <div className="productimage-container">
+                <div className="productimage-container contentmarginpadding">
                     {TeaCoffee}
                 </div>
-            </div>
+            </>
     )
 }
