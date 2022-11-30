@@ -5,12 +5,13 @@ import { Button, Tooltip } from "@mui/material"
 import {Box, InputLabel, MenuItem, FormControl, Select } from "@mui/material"
 
 export default function TeaItem(props) {
-    const [price, setPrice] = React.useState('');
     const { onAdd } = props
+    const [price, setPrice] = React.useState('');
     const addProduct = () => {
         onAdd({id:props.data.type, 
             img: props.data.img, 
             weight:props.data.pricePerLb})
+        alert("Item has been added to cart.")
     }
     const handleChange = (event) => {
       setPrice(event.target.value);

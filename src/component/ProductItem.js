@@ -11,6 +11,7 @@ export default function ProductItem(props) {
         onAdd({id:props.data.type, 
             img: props.data.img, 
             weight:props.data.pricePerLb})
+        alert("Item has been added to cart.")
     }
     const handleChange = (event) => {
       setPrice(event.target.value);

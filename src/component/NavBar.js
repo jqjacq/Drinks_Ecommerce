@@ -28,8 +28,8 @@ export default function NavBar(props) {
                 </li> */}
                 <li>
                      <button className="shoppingCart" onClick={()=> props.onClick("cart")}>
+                        <span className="numberofitems"> Cart </span>
                         <i className="fa-solid fa-cart-shopping"></i>
-                        <span className="numberofitems"> 0 </span>
                     </button>
                 </li>
                 {/* <li className="login"> <span> 

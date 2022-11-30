@@ -3,6 +3,7 @@ import InCart from "./InCart"
 
 export default function Cart(props) {
     const { cartItems, onAdd, onRemove } = props
+
     return (
         <>
             <header><h1 className="centertext"> Shopping Cart</h1></header>
@@ -14,9 +15,6 @@ export default function Cart(props) {
                         <span className="calculation">$0.00</span>
                     </p>
                     <p> Shipping & Handling: 
-                        <span className="calculation">$0.00</span>
-                    </p>
-                    <p> Tax: 
                         <span className="calculation">$0.00</span>
                     </p>
                     <hr></hr>
