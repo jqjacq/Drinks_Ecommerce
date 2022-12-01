@@ -22,7 +22,7 @@ export default function InCart(props) {
                                 {item.quantity}
                                 <button onClick={()=>onRemove(item)} className="remove">-</button>
                             </span>
-                            <span className="calculation">${item.weight}</span>  
+                            <span className="calculation">${item.cost}</span>  
                         </span>
                     </div>
                 </div>

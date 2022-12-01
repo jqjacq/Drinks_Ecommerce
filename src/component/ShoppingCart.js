@@ -5,7 +5,7 @@ export default function Cart(props) {
     const { cartItems, onAdd, onRemove } = props
     let subTotal = 0.00
     for  (let i=0; i<cartItems.length; i++) {
-        subTotal += parseFloat(cartItems[i].weight) * cartItems[i].quantity
+        subTotal += parseFloat(cartItems[i].cost) * cartItems[i].quantity
     }
     let discountPrice = 0.00
     let shippingPrice = subTotal > 99 ? 0.00 : 8.99
