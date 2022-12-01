@@ -16,13 +16,13 @@ export default function InCart(props) {
                 <div key={item.id}>
                     <div className="row"> 
                         <span>
-                            {item.id}
+                            <span>{item.id}</span>
                             <span className="calculation">
                                 <button onClick={()=>onAdd(item)} className="add">+</button>
                                 {item.quantity}
                                 <button onClick={()=>onRemove(item)} className="remove">-</button>
                             </span>
-                            {/* {item.weight}  */}
+                            <span className="calculation">${item.weight}</span>  
                         </span>
                     </div>
                 </div>

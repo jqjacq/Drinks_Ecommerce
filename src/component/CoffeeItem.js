@@ -27,7 +27,7 @@ export default function CoffeeItem(props) {
                     />
                 </Tooltip>
                     <p className = "bold"> {props.data.type} </p>
-                    <p>1lb {props.data.pricePerLb} 
+                    <p>1lb ${props.data.pricePerLb} 
                         <Button variant="outlined" size="small" color="success" className="buy"
                             onClick={()=> setButtonPopup(true)}> Buy
                         </Button> 
@@ -47,8 +47,8 @@ export default function CoffeeItem(props) {
                                 value={price}
                                 label="Price"
                                 onChange={handleChange}>
-                                <MenuItem value={1}>½lb: {props.data.halfLb} </MenuItem>
-                                <MenuItem value={2}>1lb: {props.data.pricePerLb}</MenuItem>
+                                <MenuItem value={1}>½lb: ${props.data.halfLb} </MenuItem>
+                                <MenuItem value={2}>1lb: ${props.data.pricePerLb}</MenuItem>
                             </Select>
                         </FormControl>
                     </Box>

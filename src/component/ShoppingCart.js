@@ -14,6 +14,9 @@ export default function Cart(props) {
                     <p> Subtotal: 
                         <span className="calculation">$0.00</span>
                     </p>
+                    <p> Discount:
+                        <span className="calculation">$0.00</span>
+                    </p>
                     <p> Shipping & Handling: 
                         <span className="calculation">$0.00</span>
                     </p>

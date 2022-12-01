@@ -1,4 +1,4 @@
-$contactpadding: 10px 50px;
+$contextpadding: 10px 50px;
 $mobilefont: .75rem;
 * {
     box-sizing: border-box;
@@ -38,6 +38,7 @@ $mobilefont: .75rem;
 
 //NAV BAR
 .navBar-container {
+    padding: $contextpadding;
     .navlinks {
         display:inline-flex;
         list-style-type: none;
@@ -107,7 +108,7 @@ li.homelink, li.contactlink {
 //CONTACT
 form {
     font-size: clamp(1rem, 2.5vw, 1.5rem);
-    padding: $contactpadding;
+    padding: $contextpadding;
 }
     .contact-box {
         display: grid;
