@@ -41,6 +41,10 @@
   padding: 5px 10px;
 }
 
+.navBar-container {
+  padding: 10px 50px;
+}
+
 .navBar-container .navlinks {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -73,6 +77,12 @@ li.homelink, li.contactlink {
 }
 
 .logo {
+  display: block;
+  width: 200px;
+  height: 45px;
+}
+
+.coverlogo {
   position: absolute;
   width: 100%;
   left: 0;
@@ -172,8 +182,8 @@ textarea {
   opacity: 0.5;
 }
 
-.submit-button {
-  padding: 30px 10px;
+.location {
+  padding: 10px 50px;
 }
 
 .shipandreturn-container {
@@ -350,12 +360,12 @@ textarea {
   }
   form {
     font-size: 0.75rem;
-    padding: 0;
+    padding: 5px;
   }
   .contact-box {
     display: inline-block;
     width: 100px;
-    padding: 0;
+    padding: 5px;
   }
   .contact-button {
     margin-left: 15vw;

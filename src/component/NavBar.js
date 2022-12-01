@@ -7,6 +7,9 @@ export default function NavBar(props) {
         <>
         <div className="navBar-container"> 
             <ul className="navlinks">
+                <li>
+                    <img src = "../img/onlylogo.png" className="logo" alt="Small JQ Logo" />
+                </li>
                 <li className="homelink" onClick={()=> props.onClick("home")}>Home</li>
                     <div className="dropdown">
                 <li>

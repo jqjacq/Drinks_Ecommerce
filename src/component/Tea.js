@@ -16,7 +16,7 @@ export default function Tea(props) {
                 <h1 className="centertext"> 
                 <i className="fa-solid fa-leaf teahead"></i>
                     Teas </h1>
-                <div className="productimage-container">
+                <div className="productimage-container contentmarginpadding">
                     {Tea}
                 </div>
             </>

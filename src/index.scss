@@ -1,5 +1,6 @@
 $contextpadding: 10px 50px;
 $mobilefont: .75rem;
+
 * {
     box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
@@ -63,8 +64,14 @@ $mobilefont: .75rem;
 li.homelink, li.contactlink {
     padding-top: .375rem;
 }
-//MAIN IMAGE 
 .logo {
+    display: block;
+    width: 200px;
+    height: 45px;
+}
+
+//MAIN IMAGE 
+.coverlogo {
     position: absolute;
     width: 100%;
     left: 0;
@@ -114,7 +121,7 @@ form {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 6px 0;
-        padding: $contactpadding;
+        padding: $contextpadding;
     }
     .contact-button {
         margin-left: 30vw;
@@ -144,8 +151,8 @@ form {
         color: orange;
         opacity: 0.5;
     }
-    .submit-button {
-        padding: 30px 10px;
+    .location {
+        padding: $contextpadding;
     }
 
 //SHIPPING
@@ -299,12 +306,12 @@ form {
     //CONTACT
     form {
         font-size: $mobilefont;
-        padding: 0;
+        padding: 5px;
     }
     .contact-box {
         display: inline-block;
         width: 100px;
-        padding: 0;
+        padding: 5px;
     }
     .contact-button {
         margin-left: 15vw;

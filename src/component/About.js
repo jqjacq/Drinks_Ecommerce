@@ -6,7 +6,7 @@ export default function About(props) {
             <div className="about-container">
                 <h1 className="centertext">
                     <i className="fa-solid fa-house-user halfopacity"></i>
-                    About us
+                    Our Coffee and Tea
                 </h1>
                 <section className="contentmarginpadding bold">
                     How we started

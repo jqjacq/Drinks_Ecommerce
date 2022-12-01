@@ -32,7 +32,7 @@ export default function Contact() {
             <h1 className="centertext"><i className="fa-solid fa-address-card contacthead"></i>Contact us</h1>
             <form onSubmit={handleSubmit}>
                 <fieldset>
-                    <p className="contact-subhead">Got any questions, suggestions, or concerns? Feel free to let us know!</p>
+                    <p className="contact-subhead centertext">Got any questions, suggestions, or concerns? Feel free to let us know!</p>
                     <div className="contact-box">
                         <label for="first-name">Full Name:</label>
                             <input type="text" 
@@ -70,14 +70,14 @@ export default function Contact() {
                             <option value="callme"> Call me </option>   
                         </select>
                     </div>
-                    <div className="centertext">
+                    <div className="centertext contentmarginpadding">
                         { !isSubmitting && <button className="contact-button bold" type="submit">Submit</button> }
                         { isSubmitting && <button className="contact-button bold" type="submit" style={{"width":"400px"}}>Submitting... Stuck on load because server is currently not running.</button> }
                     </div>
                 </fieldset>
 
 
-            <div className = "centertext">
+            <div className = "centertext contentmarginpadding">
                 <h4> 
                 <i className="fa-solid fa-location-dot"></i>
                 Where are we located? </h4> 
