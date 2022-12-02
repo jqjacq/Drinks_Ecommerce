@@ -70,15 +70,19 @@ li.homelink, li.contactlink {
     height: 45px;
 }
 
+
 //MAIN IMAGE 
+.backgroundcover {
+    width: 100%;
+}
 .coverlogo {
     position: absolute;
     width: 100%;
     left: 0;
     top: 0;
-    padding: 16px 0px;
+    margin: auto;
+    padding: 20px 0;
 }
-
 //PRODUCT 
 .productimage-container {
     display: grid;

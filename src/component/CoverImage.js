@@ -25,8 +25,9 @@ export default function ImageChange() {
     <>
         <img
           src={cacheImage[currentImage]}
-          alt="changing cover of field of green, tea and coffee"/>
-          <img src="../img/jqlogo.png" className="coverlogo" alt="JQ Logo" />
+          alt="changing cover of field of green, tea and coffee"
+          className="backgroundcover"/>
+          <img src="../img/jqlogo1.png" className="coverlogo" alt="JQ Logo" />
     </>
   )
 }

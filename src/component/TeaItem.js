@@ -2,20 +2,21 @@ import React from "react";
 import PopUp from "./PopupDetail"
 import './Popup.css'
 import { Button, Tooltip } from "@mui/material"
-import {Box, InputLabel, MenuItem, FormControl, Select } from "@mui/material"
+import {Box, FormControl} from "@mui/material"
+//InputLabel, MenuItem, Select
 
 export default function TeaItem(props) {
     const { onAdd } = props
-    const [price, setPrice] = React.useState('');
+    // const [price, setPrice] = React.useState('');
     const addProduct = () => {
         onAdd({id:props.data.type, 
             img: props.data.img, 
             cost:props.data.pricePerLb})
         alert("Item has been added to cart.")
     }
-    const handleChange = (event) => {
-      setPrice(event.target.value);
-    };
+    // const handleChange = (event) => {
+    //   setPrice(event.target.value);
+    // };
     const [buttonPopup, setButtonPopup] = React.useState(false)
     return (
         <>
