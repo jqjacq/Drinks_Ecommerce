@@ -238,7 +238,7 @@ form {
             display: block;
         }
         .aboutImg, .howImg, .missionImg {
-            margin-top: 10px;
+            margin-top: 5px;
             width: 100px;
             height: 75px;
         }
@@ -250,6 +250,27 @@ form {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     }
+        //NAVBAR & FOOTER
+        .navBar-container li {
+            text-align: center;
+        }
+        .navBar-container {
+            display: block;
+            .navlinks {
+                display:inline-block;
+            }
+            li a {
+                display: inline;
+                text-align: center;
+                flex-direction: column;
+                    &:hover {
+                    font-weight: bold;
+                }
+            }
+            .shoppingCart { 
+                background-color: rgba(212, 212, 212,0.5);
+            }
+        }
 }
 @media screen and (max-width: 320px) {
     body {
@@ -258,23 +279,7 @@ form {
     h1{ 
         font-size: 1rem;
     }
-    //NAVBAR & FOOTER
-    .navBar-container {
-        ul {
-            display: block;
-        }
-        li {
-            display: inline;
-            text-align: center;
-                &:hover {
-                font-weight: bold;
-            }
-        }
-        .shoppingCart { 
-            margin-left: 175px;
-            background-color: rgba(212, 212, 212,0.5);
-        }
-    }
+    
     .additionalinfo {
         ul {
             display: block;
