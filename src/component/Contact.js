@@ -34,20 +34,20 @@ export default function Contact() {
                 <fieldset>
                     <p className="contact-subhead centertext">Got any questions, suggestions, or concerns? Feel free to let us know!</p>
                     <div className="contact-box">
-                        <label for="first-name">Full Name:</label>
+                        <label htmlFor="first-name">Full Name:</label>
                             <input type="text" 
                                 id="full-name"
                                 placeholder="Joe Smith"
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                                 required></input>
-                        <label for="email">Email:</label>
+                        <label htmlFor="email">Email:</label>
                             <input type="email" 
                                 placeholder="joes1@gmail.com"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 required></input>  
-                        <label for="phonenumber">Phone Number:</label>
+                        <label htmlFor="phonenumber">Phone Number:</label>
                             <input type="tel" 
                                 id="telephone" 
                                 pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" 
@@ -55,13 +55,13 @@ export default function Contact() {
                                 value={phonenumber}
                                 onChange={(e) => setPhoneNumber(e.target.value)}
                                 required></input> 
-                        <label for="message"> Message: </label>
+                        <label htmlFor="message"> Message: </label>
                         <textarea id="message" 
                             rows="5"
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
                             required></textarea>
-                        <label for="preference"> How would you like to be communicated? </label>
+                        <label htmlFor="preference"> How would you like to be communicated? </label>
                         <select
                             value={preference}
                             onChange={(e) => setPreference(e.target.value)}>
@@ -70,10 +70,8 @@ export default function Contact() {
                             <option value="callme"> Call me </option>   
                         </select>
                     </div>
-                    <div className="centertext contentmarginpadding">
-                        { !isSubmitting && <button className="contact-button bold" type="submit">Submit</button> }
+                        { !isSubmitting && <button className="contact-button bold contentmarginpadding" type="submit">Submit</button> }
                         { isSubmitting && <button className="contact-button bold" type="submit" style={{"width":"400px"}}>Submitting... Stuck on load because server is currently not running.</button> }
-                    </div>
                 </fieldset>
 
 

@@ -1,5 +1,5 @@
 import React from "react"
-
+import { Link } from "react-router-dom"
 export default function Footer(props) {
     return (
         <>
@@ -18,12 +18,15 @@ export default function Footer(props) {
                 <i className="fa-brands fa-2x fa-youtube"></i></a>
             </p>
             <span className="additionalinfo">
-                <ul>
+                <Link to="/"> About </Link>
+                <Link to="/shippingreturn"> Shipping & Return </Link>
+                <Link to="/contact"> Feedbacks</Link>
+            </span>
+                 {/* <ul>
                     <li onClick={()=> props.onClick("about")}>About us</li>
                     <li onClick={()=> props.onClick("shipping/return")}>Shipping & Return </li>
                     <li onClick={()=> props.onClick("contact")}>Feedbacks</li>
-                </ul>
-            </span>
+                </ul> */}
             <hr></hr>
             <div className="centertext">
                 <span>COPYRIGHT © JQ's Coffee & Tea Co., All rights reserved</span> 

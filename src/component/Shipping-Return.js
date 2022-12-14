@@ -32,7 +32,7 @@ export default function Shipping() {
             </div>
             <div className="shipandreturn-container centertext">
                 <h1> 
-                    <i class="fa-solid fa-box returnhead"></i>
+                    <i className="fa-solid fa-box returnhead"></i>
                     Returns </h1>
                 <p>
                     To ensure you are completely satisfied, you may return the coffee within 45 days of the purchase date for a full refund (excluding shipping and handling). Shipping and handling charges are non-refundable. Please allow at least 1-2 weeks for refund and processing time.

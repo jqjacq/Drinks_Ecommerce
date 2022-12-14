@@ -38,32 +38,51 @@ $mobilefont: .75rem;
 }
 
 //NAV BAR
+Link {
+    text-decoration: none;
+}
 .navBar-container {
     padding: $contextpadding;
     .navlinks {
         display:inline-flex;
-        list-style-type: none;
     }
-    li {
-        margin-right: 15px;
-        &:hover {
-            font-style: italic;
-            cursor: pointer;
-        }
-        &:active {
-            font-weight: bold;
-        }
+}
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0 15px;
+    &:hover {
+        font-weight: italic;
+        cursor: pointer;
     }
+    &:active {
+        font-weight: bold;
+    }
+}
+.home, .contact {
+    padding-top: .375rem;
+}
+    //For less optimized loading page
+    // li {
+    //     margin-right: 15px;
+    //     &:hover {
+    //         font-style: italic;
+    //         cursor: pointer;
+    //     }
+    //     &:active {
+    //         font-weight: bold;
+    //     }
+    // }
     .shoppingCart {
         border: rgba(40, 121, 40, 0.5);
         background-color: rgba(40, 121, 40, 0.3);
         padding: 5px 10px;
         cursor: pointer;
     }
-}
-li.homelink, li.contactlink {
-    padding-top: .375rem;
-}
+// li.homelink, li.contactlink {
+//     padding-top: .375rem;
+// }
+
 .logo {
     display: block;
     width: 200px;
@@ -271,7 +290,24 @@ form {
                 background-color: rgba(212, 212, 212,0.5);
             }
         }
-}
+        //CONTACT
+        form {
+            font-size: $mobilefont;
+            padding: 5px;
+        }
+        .contact-subhead {
+            text-align: left;
+        }
+        .contact-box {
+            display: inline-block;
+            width: 100px;
+            padding: 5px;
+        }
+        .contact-button {
+            margin-left: 15vw;
+            padding: 0;
+        }
+    }
 @media screen and (max-width: 320px) {
     body {
         font-size: $mobilefont;
@@ -311,19 +347,5 @@ form {
     }
     .buy {
         font-size: $mobilefont;
-    }
-    //CONTACT
-    form {
-        font-size: $mobilefont;
-        padding: 5px;
-    }
-    .contact-box {
-        display: inline-block;
-        width: 100px;
-        padding: 5px;
-    }
-    .contact-button {
-        margin-left: 15vw;
-        padding: 0;
     }
 }

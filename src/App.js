@@ -9,6 +9,7 @@ import ShippingReturn from "./component/Shipping-Return"
 import Tea from "./component/Tea"
 import Coffee from "./component/Coffee"
 import ShoppingCart from "./component/ShoppingCart"
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 export default function App() {
     const [cartItems, setCartItems] = React.useState([])
@@ -36,70 +37,106 @@ export default function App() {
             )
         }
     }
-    const [MyContent, setMyContent] = React.useState("home")
-    const Content = () => {
-        if (MyContent === "home" || MyContent === "about") {
-            return (
-                <About />
-            )
-        }
-        else if (MyContent === "product") {
-            return (
-                <Product 
-                    onAdd = { onAdd }
-                    onRemove = {onRemove} />
-            )
-        }
-        else if (MyContent === "shipping/return") {
-            return (
-                <>
-                <ShippingReturn />
-                </>
-            )
-        } else if(MyContent === "coffee") {
-            return (
-                <>
-                <Coffee 
-                    onAdd = { onAdd }
-                    onRemove = {onRemove} />
-                </>
-            )
-        } else if (MyContent === "tea") {
-            return(
-                <>
-                <Tea 
-                    onAdd = { onAdd }
-                    onRemove = {onRemove} />
-                </>    
-            )
-        } else if (MyContent === "cart") {
-            return (
-                <>
-                <ShoppingCart 
-                    cartItems = { cartItems }
-                    onAdd = { onAdd }
-                    onRemove = {onRemove} />
-                </>
-            )
-        }
-        else { 
-            return (
-                <>
-                <Contact />
-                </>
-            )
-        }
-    }
     return (
-        <div>
+        <Router>
             <CoverImage />
             <Navbar 
-                onClick = {setMyContent}
+            // onClick = {setMyContent}
             />
-            <Content />
+                <Switch>
+                    <Route exact path="/">
+                        <About />
+                    </Route>
+                    <Route path="/product">
+                        <Product 
+                            onAdd = { onAdd }
+                            onRemove = { onRemove }/>
+                    </Route>
+                    <Route path="/shippingreturn">
+                        <ShippingReturn />
+                    </Route>
+                    <Route path="/coffee">
+                        <Coffee 
+                            onAdd = { onAdd }
+                            onRemove = { onRemove }/>
+                    </Route>
+                    <Route path="/tea">
+                        <Tea 
+                            onAdd = { onAdd }
+                            onRemove = { onRemove }
+                        />
+                    </Route>
+                    <Route path="/cart">
+                        <ShoppingCart 
+                            cartItems = { cartItems }
+                            onAdd = { onAdd }
+                            onRemove = { onRemove }
+                        />
+                    </Route>
+                    <Route path="/contact">
+                        <Contact />
+                    </Route>
+                </Switch>
+             {/* <Content /> */}
             <Footer 
-                onClick = {setMyContent}
+                // onClick = {setMyContent}
             />
-        </div>
+        </Router>
     )
 }
+
+    //Alternative to routing -- slower load time.
+    // const [MyContent, setMyContent] = React.useState("home")
+    // const Content = () => {
+    //     if (MyContent === "home" || MyContent === "about") {
+    //         return (
+    //             <About />
+    //         )
+    //     }
+    //     else if (MyContent === "product") {
+    //         return (
+    //             <Product 
+    //                 onAdd = { onAdd }
+    //                 onRemove = {onRemove} />
+    //         )
+    //     }
+    //     else if (MyContent === "shipping/return") {
+    //         return (
+    //             <>
+    //             <ShippingReturn />
+    //             </>
+    //         )
+    //     } else if(MyContent === "coffee") {
+    //         return (
+    //             <>
+    //             <Coffee 
+    //                 onAdd = { onAdd }
+    //                 onRemove = {onRemove} />
+    //             </>
+    //         )
+    //     } else if (MyContent === "tea") {
+    //         return(
+    //             <>
+    //             <Tea 
+    //                 onAdd = { onAdd }
+    //                 onRemove = {onRemove} />
+    //             </>    
+    //         )
+    //     } else if (MyContent === "cart") {
+    //         return (
+    //             <>
+    //             <ShoppingCart 
+    //                 cartItems = { cartItems }
+    //                 onAdd = { onAdd }
+    //                 onRemove = {onRemove} />
+    //             </>
+    //         )
+    //     }
+    //     else { 
+    //         return (
+    //             <>
+    //             <Contact />
+    //             </>
+    //         )
+    //     }
+    // }
