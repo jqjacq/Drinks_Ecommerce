@@ -1,6 +1,6 @@
 import React from "react";
 import PopUp from "./PopupDetail"
-import './Popup.css'
+import './style/Popup.css'
 import { Button, Tooltip } from "@mui/material"
 import {Box, FormControl } from "@mui/material"
 //InputLabel, MenuItem, Select
