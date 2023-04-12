@@ -1,3 +1,4 @@
+//NAVBAR, ABOUT, MAIN IMAGE, FOOTER, SHIPPING & MEDIA QUERY
 $contextpadding: 10px 50px;
 $mobilefont: .75rem;
 
@@ -22,8 +23,7 @@ $mobilefont: .75rem;
     display: flex;
 }
 
-//ABOUT {
-.about-container {
+.about-container { //ABOUT-HOME
     .about {
         font-weight: normal;
     } 
@@ -37,8 +37,8 @@ $mobilefont: .75rem;
     }
 }
 
-//NAV BAR
-Link {
+
+Link { //NAV BAR
     text-decoration: none;
 }
 .navBar-container {
@@ -62,36 +62,13 @@ a {
 .home, .contact {
     padding-top: .375rem;
 }
-    //For less optimized loading page
-    // li {
-    //     margin-right: 15px;
-    //     &:hover {
-    //         font-style: italic;
-    //         cursor: pointer;
-    //     }
-    //     &:active {
-    //         font-weight: bold;
-    //     }
-    // }
-    .shoppingCart {
-        border: rgba(40, 121, 40, 0.5);
-        background-color: rgba(40, 121, 40, 0.3);
-        padding: 5px 10px;
-        cursor: pointer;
-    }
-// li.homelink, li.contactlink {
-//     padding-top: .375rem;
-// }
-
 .logo {
     display: block;
     width: 200px;
     height: 45px;
 }
 
-
-//MAIN IMAGE 
-.backgroundcover {
+.backgroundcover { //MAIN IMAGE 
     width: 100%;
 }
 .coverlogo {
@@ -102,84 +79,8 @@ a {
     margin: auto;
     padding: 20px 0;
 }
-//PRODUCT 
-.productimage-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr, 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-top: 20px;
-    .coffeeteaImage {
-        border-radius: 5px;
-        width: 100px;
-        height: 100px;
-            &:hover {
-            opacity: 0.7;
-            cursor: pointer;
-        }
-    }
-    .buy {
-        margin-left: 5px;
-        cursor: pointer;
-    }
-    }
-.coffeehead {
-    color: blue;
-    opacity: 0.5;
-}
-.teahead {
-    color: green;
-    opacity: 0.5;
-}
-.allhead {
-    color: red;
-    opacity: 0.5;
-}
 
-//CONTACT
-form {
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
-    padding: $contextpadding;
-}
-    .contact-box {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 6px 0;
-        padding: $contextpadding;
-    }
-    .contact-button {
-        margin-left: 30vw;
-        width: 150px;
-        padding: 5px;
-        border: gray;
-        border-radius: 5px;
-        background-color: rgb(204, 202, 202);
-        box-shadow: 2px 1px 1px;
-        color: black;
-            &:hover {
-                background-color: gray;
-                color: white;
-            }
-            &:active {
-                box-shadow: 2px 1px 1px #999;
-                transform: translateY(4px)
-            }
-    }
-    textarea {
-            resize: none;
-        }
-    .fa-regular {
-        margin-right: 5px;
-    }
-    .contacthead {
-        color: orange;
-        opacity: 0.5;
-    }
-    .location {
-        padding: $contextpadding;
-    }
-
-//SHIPPING
-.shipandreturn-container {
+.shipandreturn-container { //SHIPPING
         padding: 10px 50px;
     }
     .shipping-question {
@@ -193,27 +94,8 @@ form {
         color: brown;
         opacity: 0.5;
     }
-//SHOPPING CART
-.cart-section {
-        margin-bottom: 30px;
-    }
-    .calculation {
-        float:right;
-    }
-    .row {
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-    }
-    .col-1 {
-        flex: 1;
-    }
-    .col-2 {
-        flex: 2;
-    }
 
-//FOOTER
-.footer {
+.footer { //FOOTER
     font-size: .75rem;
     padding: 2rem;
     .additionalinfo {
@@ -269,8 +151,7 @@ form {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     }
-        //NAVBAR & FOOTER
-        .navBar-container li {
+        .navBar-container li { //NAVBAR & FOOTER
             text-align: center;
         }
         .navBar-container {
@@ -290,8 +171,8 @@ form {
                 background-color: rgba(212, 212, 212,0.5);
             }
         }
-        //CONTACT
-        form {
+        
+        form {  //CONTACT
             font-size: $mobilefont;
             padding: 5px;
         }
@@ -329,15 +210,13 @@ form {
     .aboutImg, .howImg, .missionImg {
         display: none;
     }
-    //MAIN IMAGE 
-    .mainimage-container {
+    .mainimage-container { //MAIN IMAGE 
         .mainImage {
             width: 100%;
             height: 25%;
         }    
     }
-    //PRODUCT
-    .productimage-container {
+    .productimage-container {    //PRODUCT
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         .coffeeteaImage {

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useMemo } from "react"
-import "../component/style/index.css"
+import "../style/index.css"
 
 export default function ImageChange() {
   const cacheImage = useMemo(() => 
