@@ -79,6 +79,7 @@ a {
     margin: auto;
     padding: 20px 0;
 }
+<<<<<<< HEAD:src/style/index.scss
 
 .shipandreturn-container { //SHIPPING
         padding: 10px 50px;
@@ -94,6 +95,101 @@ a {
         color: brown;
         opacity: 0.5;
     }
+=======
+//PRODUCT 
+.productimage-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr, 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 20px;
+    .coffeeteaImage {
+        border-radius: 5px;
+        width: 100px;
+        height: 100px;
+            &:hover {
+            opacity: 0.7;
+            cursor: pointer;
+        }
+    }
+    .buy {
+        margin-left: 5px;
+        cursor: pointer;
+    }
+    }
+.coffeehead {
+    color: blue;
+    opacity: 0.5;
+}
+.teahead {
+    color: green;
+    opacity: 0.5;
+}
+.allhead {
+    color: red;
+    opacity: 0.5;
+}
+
+//CONTACT
+form {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    padding: $contextpadding;
+}
+    .contact-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px 0;
+        padding: $contextpadding;
+    }
+    .contact-button {
+        margin-left: 30vw;
+        width: 150px;
+        padding: 5px;
+        border: gray;
+        border-radius: 5px;
+        background-color: rgb(204, 202, 202);
+        box-shadow: 2px 1px 1px;
+        color: black;
+            &:hover {
+                background-color: gray;
+                color: white;
+            }
+            &:active {
+                box-shadow: 2px 1px 1px #999;
+                transform: translateY(4px)
+            }
+    }
+    textarea {
+            resize: none;
+        }
+    .fa-regular {
+        margin-right: 5px;
+    }
+    .contacthead {
+        color: orange;
+        opacity: 0.5;
+    }
+    .location {
+        padding: $contextpadding;
+    }
+//SHOPPING CART
+.cart-section {
+        margin-bottom: 30px;
+    }
+    .calculation {
+        float:right;
+    }
+    .row {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .col-1 {
+        flex: 1;
+    }
+    .col-2 {
+        flex: 2;
+    }
+>>>>>>> 48f59a6856ed6b579cf6a5844652021f055a3613:src/component/style/index.scss
 
 .footer { //FOOTER
     font-size: .75rem;
