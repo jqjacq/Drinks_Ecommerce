@@ -79,6 +79,7 @@ a {
     margin: auto;
     padding: 20px 0;
 }
+<<<<<<< HEAD:src/style/index.scss
 
 .shipandreturn-container { //SHIPPING
         padding: 10px 50px;
@@ -94,7 +95,7 @@ a {
         color: brown;
         opacity: 0.5;
     }
-
+=======
 //PRODUCT 
 .productimage-container {
     display: grid;
@@ -170,7 +171,6 @@ form {
     .location {
         padding: $contextpadding;
     }
-
 //SHOPPING CART
 .cart-section {
         margin-bottom: 30px;
@@ -189,7 +189,7 @@ form {
     .col-2 {
         flex: 2;
     }
-
+>>>>>>> 48f59a6856ed6b579cf6a5844652021f055a3613:src/component/style/index.scss
 
 .footer { //FOOTER
     font-size: .75rem;
@@ -264,10 +264,7 @@ form {
                 }
             }
             .shoppingCart { 
-                border: rgba(40, 121, 40, 0.5);
-                background-color: rgba(40, 121, 40, 0.3);
-                padding: 5px 10px;
-                cursor: pointer;
+                background-color: rgba(212, 212, 212,0.5);
             }
         }
         

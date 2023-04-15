@@ -1,0 +1,44 @@
+$contextpadding: 10px 50px;
+
+//CONTACT
+form {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    padding: $contextpadding;
+}
+    .contact-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 6px 0;
+        padding: $contextpadding;
+    }
+    .contact-button {
+        margin-left: 30vw;
+        width: 150px;
+        padding: 5px;
+        border: gray;
+        border-radius: 5px;
+        background-color: rgb(204, 202, 202);
+        box-shadow: 2px 1px 1px;
+        color: black;
+            &:hover {
+                background-color: gray;
+                color: white;
+            }
+            &:active {
+                box-shadow: 2px 1px 1px #999;
+                transform: translateY(4px)
+            }
+    }
+    textarea {
+            resize: none;
+        }
+    .fa-regular {
+        margin-right: 5px;
+    }
+    .contacthead {
+        color: orange;
+        opacity: 0.5;
+    }
+    .location {
+        padding: $contextpadding;
+    }

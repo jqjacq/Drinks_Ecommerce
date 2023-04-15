@@ -3,6 +3,7 @@
 // submitted data will show up on contactinfo.json file
 
 import React, { useState } from "react"
+import '../style/contact.css'
 
 export default function Contact() {
     const [name, setName] = useState("")
