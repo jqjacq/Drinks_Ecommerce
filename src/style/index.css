@@ -83,7 +83,6 @@ a:active {
   padding: 20px 0;
 }
 
-<<<<<<< HEAD:src/style/index.css
 .shipandreturn-container {
   padding: 10px 50px;
 }
@@ -102,7 +101,6 @@ a:active {
   opacity: 0.5;
 }
 
-=======
 .productimage-container {
   display: grid;
   grid-template-rows: 1fr 1fr, 1fr 1fr;
@@ -208,7 +206,6 @@ textarea {
   flex: 2;
 }
 
->>>>>>> 48f59a6856ed6b579cf6a5844652021f055a3613:src/component/style/index.css
 .footer {
   font-size: 0.75rem;
   padding: 2rem;
@@ -283,7 +280,10 @@ textarea {
     font-weight: bold;
   }
   .navBar-container .shoppingCart {
-    background-color: rgba(212, 212, 212, 0.5);
+    border: rgba(40, 121, 40, 0.5);
+    background-color: rgba(40, 121, 40, 0.3);
+    padding: 5px 10px;
+    cursor: pointer;
   }
   form {
     font-size: 0.75rem;

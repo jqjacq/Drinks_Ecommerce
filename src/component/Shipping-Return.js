@@ -1,5 +1,4 @@
 import React from "react"
-import '../style/shipping.css'
 
 export default function Shipping() {
     return (

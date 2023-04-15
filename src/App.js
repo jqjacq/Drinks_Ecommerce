@@ -4,37 +4,34 @@ import Navbar from "./component/NavBar"
 import Footer from "./component/Footer"
 import About from "./component/About"
 import Contact from "./component/Contact"
-import Product from "./component/Product"
 import ShippingReturn from "./component/Shipping-Return"
-import Tea from "./component/Tea"
-import Coffee from "./component/Coffee"
+import AllProduct from "./component/AllProduct";
+// import Product from "./component/Product"
+// import Tea from "./component/Tea"
+// import Coffee from "./component/Coffee"
 import ShoppingCart from "./component/ShoppingCart"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 export default function App() {
     const [cartItems, setCartItems] = React.useState([])
+    //Add item to cart
     const onAdd = (product) => {
-        const exist = cartItems.find((x) => x.id === product.id)
-        if (exist) {
-            setCartItems (
-                cartItems.map(
-                    x => x.id === product.id ? {...exist, quantity: exist.quantity + 1} : x
-                )
-            )
+        const findItem = cartItems.find((item) => item.id === product.id)
+        if (findItem) {
+            setCartItems (cartItems.map(
+                    item => item.id === product.id ? {...findItem, quantity: findItem.quantity + 1} : item))
         } else {
             setCartItems([...cartItems, {...product, quantity: 1}])
         }
     }
+    //Remove item to cart
     const onRemove = (product) => {
-        const exist =  cartItems.find((x) => x.id === product.id)
-        if (exist.quantity === 1) {
-            setCartItems(cartItems.filter((x) => x.id !== product.id))
+        const findItem =  cartItems.find((item) => item.id === product.id)
+        if (findItem.quantity === 1) {
+            setCartItems(cartItems.filter((item) => item.id !== product.id))
         } else {
-            setCartItems (
-                cartItems.map(
-                    x => x.id === product.id ? {...exist, quantity: exist.quantity - 1} : x
-                )
-            )
+            setCartItems (cartItems.map(
+                    item => item.id === product.id ? {...findItem, quantity: findItem.quantity - 1} : item))
         }
     }
     return (
@@ -47,15 +44,18 @@ export default function App() {
                     <Route exact path="/">
                         <About />
                     </Route>
-                    <Route path="/product">
-                        <Product 
-                            onAdd = { onAdd }
-                            onRemove = { onRemove }/>
-                    </Route>
                     <Route path="/shippingreturn">
                         <ShippingReturn />
                     </Route>
-                    <Route path="/coffee">
+                    <Route path="/allproducts">
+                        <AllProduct />
+                    </Route>
+                    {/* <Route path="/product">
+                        <Product 
+                            onAdd = { onAdd }
+                            onRemove = { onRemove }/>
+                    </Route> */}
+                    {/* <Route path="/coffee">
                         <Coffee 
                             onAdd = { onAdd }
                             onRemove = { onRemove }/>
@@ -65,7 +65,7 @@ export default function App() {
                             onAdd = { onAdd }
                             onRemove = { onRemove }
                         />
-                    </Route>
+                    </Route> */}
                     <Route path="/cart">
                         <ShoppingCart 
                             cartItems = { cartItems }
@@ -77,66 +77,7 @@ export default function App() {
                         <Contact />
                     </Route>
                 </Switch>
-             {/* <Content /> */}
-            <Footer 
-                // onClick = {setMyContent}
-            />
+            <Footer  />
         </Router>
     )
 }
-
-    //Alternative to routing -- slower load time.
-    // const [MyContent, setMyContent] = React.useState("home")
-    // const Content = () => {
-    //     if (MyContent === "home" || MyContent === "about") {
-    //         return (
-    //             <About />
-    //         )
-    //     }
-    //     else if (MyContent === "product") {
-    //         return (
-    //             <Product 
-    //                 onAdd = { onAdd }
-    //                 onRemove = {onRemove} />
-    //         )
-    //     }
-    //     else if (MyContent === "shipping/return") {
-    //         return (
-    //             <>
-    //             <ShippingReturn />
-    //             </>
-    //         )
-    //     } else if(MyContent === "coffee") {
-    //         return (
-    //             <>
-    //             <Coffee 
-    //                 onAdd = { onAdd }
-    //                 onRemove = {onRemove} />
-    //             </>
-    //         )
-    //     } else if (MyContent === "tea") {
-    //         return(
-    //             <>
-    //             <Tea 
-    //                 onAdd = { onAdd }
-    //                 onRemove = {onRemove} />
-    //             </>    
-    //         )
-    //     } else if (MyContent === "cart") {
-    //         return (
-    //             <>
-    //             <ShoppingCart 
-    //                 cartItems = { cartItems }
-    //                 onAdd = { onAdd }
-    //                 onRemove = {onRemove} />
-    //             </>
-    //         )
-    //     }
-    //     else { 
-    //         return (
-    //             <>
-    //             <Contact />
-    //             </>
-    //         )
-    //     }
-    // }

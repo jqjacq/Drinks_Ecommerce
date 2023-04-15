@@ -1,6 +1,5 @@
 import React from "react";
 import InCart from "./InCart"
-import '../style/cart.css'
 
 export default function Cart(props) {
     const { cartItems, onAdd, onRemove } = props
