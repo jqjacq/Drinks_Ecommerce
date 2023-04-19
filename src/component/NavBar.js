@@ -1,11 +1,35 @@
-import React from "react"
+import React, { useEffect, useState, useMemo }  from "react"
 import { Link } from "react-router-dom"
 // import ShoppingCart from "./ShoppingCart"
 // import SearchList from "./SearchList"
 
 export default function NavBar(props) {
+    const cacheImage = useMemo(() => 
+    [
+      "/img/maincovers/adjustedfront.png",
+      "/img/maincovers/adjustedtea.png",
+      "/img/maincovers/adjustedcoffee2.png"
+  ], [])
+  const [currentImage, setCurrentImage] = useState(0)
+  const intervalTime = 4000
+
+  function setTimer() {
+    let nextImage = currentImage + 1
+      if (nextImage >= cacheImage.length) {
+        nextImage = 0
+      }
+    setTimeout(() => setCurrentImage(nextImage), intervalTime)
+  }
+
+  useEffect(setTimer, [cacheImage, currentImage])
+
     return (
         <>
+                <img
+          src={cacheImage[currentImage]}
+          alt="changing cover of field of green, tea and coffee"
+          className="backgroundcover"/>
+          <img src="../img/jqlogo1.png" className="coverlogo" alt="JQ Logo" />
         <div className="navBar-container"> 
             <div className="navlinks">
                 <img src = "../img/onlylogo.png" className="logo" alt="Small JQ Logo" />

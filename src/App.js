@@ -1,8 +1,7 @@
 import React from "react";
-import CoverImage from "./component/CoverImage";
 import Navbar from "./component/NavBar"
 import Footer from "./component/Footer"
-import About from "./component/About"
+import Home from "./component/Home"
 import Contact from "./component/Contact"
 import Product from "./component/Product"
 import ShippingReturn from "./component/Shipping-Return"
@@ -39,13 +38,10 @@ export default function App() {
     }
     return (
         <Router>
-            <CoverImage />
-            <Navbar 
-            // onClick = {setMyContent}
-            />
+            <Navbar />
                 <Switch>
                     <Route exact path="/">
-                        <About />
+                        <Home />
                     </Route>
                     <Route path="/product">
                         <Product 

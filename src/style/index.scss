@@ -1,6 +1,7 @@
 //NAVBAR, ABOUT, MAIN IMAGE, FOOTER, SHIPPING & MEDIA QUERY
 $contextpadding: 10px 50px;
 $mobilefont: .75rem;
+$cartbackground: rgb(132, 215, 132);
 
 * {
     box-sizing: border-box;
@@ -23,7 +24,7 @@ $mobilefont: .75rem;
     display: flex;
 }
 
-.about-container { //ABOUT-HOME
+.about-container { //ABOUT-HOME PAGE
     .about {
         font-weight: normal;
     } 
@@ -36,7 +37,6 @@ $mobilefont: .75rem;
         padding: 5px 10px;
     }
 }
-
 
 Link { //NAV BAR
     text-decoration: none;
@@ -52,7 +52,8 @@ a {
     color: black;
     margin: 0 15px;
     &:hover {
-        font-weight: italic;
+        color: black;
+        font-weight: bold;
         cursor: pointer;
     }
     &:active {
@@ -62,13 +63,13 @@ a {
 .home, .contact {
     padding-top: .375rem;
 }
-.logo {
+.logo { //LOGO NEXT TO NAV
     display: block;
     width: 200px;
     height: 45px;
 }
 
-.backgroundcover { //MAIN IMAGE 
+.backgroundcover { //MAIN IMAGE BEHIND BIGGER LOGO
     width: 100%;
 }
 .coverlogo {
@@ -79,24 +80,23 @@ a {
     margin: auto;
     padding: 20px 0;
 }
-<<<<<<< HEAD:src/style/index.scss
+//SHIPPING & RETURN PAGE
+.shipandreturn-container {
+    padding: 10px 50px;
+}
+.shipping-question {
+    padding-top: 15px;
+}
+.shippinghead {
+    color: purple;
+    opacity: 0.5;
+}
+.returnhead {
+    color: brown;
+    opacity: 0.5;
+}
 
-.shipandreturn-container { //SHIPPING
-        padding: 10px 50px;
-    }
-    .shipping-question {
-        padding-top: 15px;
-    }
-    .shippinghead {
-        color: purple;
-        opacity: 0.5;
-    }
-    .returnhead {
-        color: brown;
-        opacity: 0.5;
-    }
-=======
-//PRODUCT 
+//PRODUCT PAGE
 .productimage-container {
     display: grid;
     grid-template-rows: 1fr 1fr, 1fr 1fr;
@@ -129,7 +129,7 @@ a {
     opacity: 0.5;
 }
 
-//CONTACT
+//CONTACT PAGE
 form {
     font-size: clamp(1rem, 2.5vw, 1.5rem);
     padding: $contextpadding;
@@ -171,25 +171,37 @@ form {
     .location {
         padding: $contextpadding;
     }
+
 //SHOPPING CART
 .cart-section {
-        margin-bottom: 30px;
-    }
-    .calculation {
-        float:right;
-    }
-    .row {
-        display: flex;
-        justify-content: space-between;
-        padding: 10px;
-    }
-    .col-1 {
-        flex: 1;
-    }
-    .col-2 {
-        flex: 2;
-    }
->>>>>>> 48f59a6856ed6b579cf6a5844652021f055a3613:src/component/style/index.scss
+    margin-bottom: 30px;
+}
+.calculation {
+    float:right;
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.col-1 {
+    flex: 1;
+}
+.col-2 {
+    flex: 2;
+}
+
+.shoppingCart {
+    border: $cartbackground;
+    opacity: 0.8;
+    background-color: $cartbackground;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.checkout-button {
+    border-radius: 5px;
+    border-color: 1px solid black;
+}
 
 .footer { //FOOTER
     font-size: .75rem;
@@ -229,6 +241,7 @@ form {
     margin-right: 5px;
 }
 
+//MEDIA QUERY FOR MOBILE
 @media screen and (max-width: 600px) {
     .about-container {
         .about {

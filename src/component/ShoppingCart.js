@@ -1,6 +1,6 @@
 import React from "react";
 import InCart from "./InCart"
-import '../style/cart.css'
+import "../style/index.css"
 
 export default function Cart(props) {
     const { cartItems, onAdd, onRemove } = props
@@ -34,9 +34,8 @@ export default function Cart(props) {
                         <span className="calculation">${totalPrice.toFixed(2)}</span>
                     </p>
                     <hr></hr>
-                    <button> Checkout </button>
+                    <button className="checkout-button"> Checkout </button>
                 </aside>
-
             </div>
         </>
         

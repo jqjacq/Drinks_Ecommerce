@@ -1,7 +1,7 @@
 import React from "react"
 import teacoffeeData from "../data/coffeetea"
 import ProductItem from "./ProductItem"
-import "../style/product.css"
+import "../style/index.css"
 
 export default function Product(props) {
     const { onAdd } = props

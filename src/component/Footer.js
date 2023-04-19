@@ -29,7 +29,7 @@ export default function Footer(props) {
                 </ul> */}
             <hr></hr>
             <div className="centertext">
-                <span>COPYRIGHT © JQ's Coffee & Tea Co., All rights reserved</span> 
+                <span>COPYRIGHT 2022 © JQ's Coffee & Tea Co., All rights reserved</span> 
                 <span>· THIS IS NOT AN ACTUAL PRODUCT FOR SALE.</span> 
             </div>
         </footer>
