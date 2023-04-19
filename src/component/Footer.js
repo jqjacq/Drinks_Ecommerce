@@ -6,15 +6,15 @@ export default function Footer(props) {
         <footer className="footer">
             <br></br>
             <p className="socialmedia">
-                <a href="https://www.github.com/jqjacq" alt="Github">
+                <a target="_new" href="https://www.github.com/jqjacq" alt="Github">
                 <i className="fa-brands fa-2x fa-github"></i></a>
-                <a href="https://www.facebook.com" alt="Facebook Page">
+                <a target="_new" href="https://www.facebook.com" alt="Facebook Page">
                 <i className="fa-brands fa-2x fa-facebook"></i></a>
-                <a href="https://www.instagram.com" alt="Instagram Page">
+                <a target="_new" href="https://www.instagram.com" alt="Instagram Page">
                 <i className="fa-brands fa-2x fa-instagram"></i></a>
-                <a href="https://www.twitter.com" alt="Twitter Page">
+                <a target="_new" href="https://www.twitter.com" alt="Twitter Page">
                 <i className="fa-brands fa-2x fa-twitter"></i></a>
-                <a href="https://www.youtube.com" alt="YouTube Page">
+                <a target="_new" href="https://www.youtube.com" alt="YouTube Page">
                 <i className="fa-brands fa-2x fa-youtube"></i></a>
             </p>
             <span className="additionalinfo">
