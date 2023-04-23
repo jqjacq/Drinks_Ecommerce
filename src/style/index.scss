@@ -23,6 +23,18 @@ $cartbackground: rgb(132, 215, 132);
 .flex {
     display: flex;
 }
+//COVER IMAGE
+.backgroundcover {
+    width: 100%;
+}
+.coverlogo {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    margin: auto;
+    padding: 20px 0;
+}
 
 //ALL BUTTONS 
 .productbutton-container, .contactbutton-container {
@@ -41,22 +53,11 @@ $cartbackground: rgb(132, 215, 132);
     }
 }
 
-.about-container { //ABOUT-HOME PAGE
-    .aboutImg, .howImg, .missionImg {
-        width: 200px;
-        height: 150px;
-        border-radius: 5px;
-    }
-    p {
-        padding: 5px 10px;
-    }
-}
-
-Link { //NAV BAR 
+//NAV BAR AND FOOTER
+Link {  
     text-decoration: none;
 }
-
-.navBar-container { 
+.navBar-container, .footer-container { 
     padding: $contextpadding;
     .navlinks {
         display:inline-flex;
@@ -84,17 +85,31 @@ a {
     width: 200px;
     height: 45px;
 }
+.footer-socialmedia, .footer-additionalinfo {
+    display: flex;
+    justify-content: center;
+        .fa-brands {
+            color: black;
+            margin-right: 5px;
+        }
+     hr {
+         opacity: 0.1;
+     }
+ }
+ .fa-solid {
+     margin-right: 5px;
+ }
 
-.backgroundcover { //MAIN IMAGE BEHIND BIGGER LOGO
-    width: 100%;
-}
-.coverlogo {
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-    margin: auto;
-    padding: 20px 0;
+ //ABOUT-HOME PAGE
+.about-container { 
+    .aboutImg, .howImg, .missionImg {
+        width: 200px;
+        height: 150px;
+        border-radius: 5px;
+    }
+    p {
+        padding: 5px 10px;
+    }
 }
 
 //SHIPPING & RETURN PAGE
@@ -151,25 +166,25 @@ form {
     font-size: clamp(1rem, 2.5vw, 1.5rem);
     padding: $contextpadding;
 }
-    .contact-box {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 6px 0;
-        padding: $contextpadding;
-    }
-    textarea {
-        resize: none;
-    }
-    .fa-regular {
-        margin-right: 5px;
-    }
-    .contacthead {
-        color: orange;
-        opacity: 0.5;
-    }
-    .location {
-        padding: $contextpadding;
-    }
+.contact-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px 0;
+    padding: $contextpadding;
+}
+textarea {
+    resize: none;
+}
+.fa-regular {
+    margin-right: 5px;
+}
+.contacthead {
+    color: orange;
+    opacity: 0.5;
+}
+.location {
+    padding: $contextpadding;
+}
 
 //SHOPPING CART
 .cart-section {
@@ -190,46 +205,6 @@ form {
     flex: 2;
 }
 
-
-.footer { //FOOTER
-    font-size: .75rem;
-    padding: 2rem;
-    .additionalinfo {
-        display: flex;
-        justify-content: center;
-    }
-        ul {
-            display: inline-flex;
-            list-style-type: none;
-        }
-        li {
-            margin-right: 50px;
-            text-decoration: none;
-            &:hover {
-                font-style: italic;
-                cursor: pointer
-                }
-            &:active {
-                font-weight: bold;
-                }
-            }
-        }
-    .socialmedia {
-        display: flex;
-        justify-content: center;
-            .fa-brands {
-                color: black;
-                margin-right: 5px;
-            }
-    hr {
-        opacity: 0.1;
-    }
-}
-.fa-solid {
-    margin-right: 5px;
-}
-
-
 //MEDIA QUERY FOR MOBILE
 @media screen and (max-width: 600px) {
     .about-container {
@@ -249,57 +224,43 @@ form {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     }
-        .navBar-container li { //NAVBAR & FOOTER
+    .navBar-container li { //NAVBAR & FOOTER
+        text-align: center;
+    }
+    .navBar-container {
+        display: block;
+        .navlinks {
+            display:inline-block;
+        }
+        li a {
+            display: inline;
             text-align: center;
-        }
-        .navBar-container {
-            display: block;
-            .navlinks {
-                display:inline-block;
+            flex-direction: column;
+                &:hover {
+                font-weight: bold;
             }
-            li a {
-                display: inline;
-                text-align: center;
-                flex-direction: column;
-                    &:hover {
-                    font-weight: bold;
-                }
-            }
-            .shoppingCart { 
-                background-color: rgba(212, 212, 212,0.5);
-            }
-        }
-        
-        form {  //CONTACT
-            font-size: $mobilefont;
-            padding: 5px;
-        }
-        .contact-subhead {
-            text-align: left;
-        }
-        .contact-box {
-            display: inline-block;
-            width: 100px;
-            padding: 5px;
         }
     }
+    
+    form {  //CONTACT
+        font-size: $mobilefont;
+        padding: 5px;
+    }
+    .contact-subhead {
+        text-align: left;
+    }
+    .contact-box {
+        display: inline-block;
+        width: 100px;
+        padding: 5px;
+    }
+}    
 @media screen and (max-width: 320px) {
     body {
         font-size: $mobilefont;
     }
     h1{ 
         font-size: 1rem;
-    }
-    
-    .additionalinfo {
-        ul {
-            display: block;
-        }
-        li {
-            &:hover {
-                font-weight: bold;
-            }
-        }
     }
     .mainimage-container { //MAIN IMAGE 
         .mainImage {

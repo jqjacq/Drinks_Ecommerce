@@ -24,6 +24,19 @@
   display: flex;
 }
 
+.backgroundcover {
+  width: 100%;
+}
+
+.coverlogo {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  margin: auto;
+  padding: 20px 0;
+}
+
 .productbutton-container, .contactbutton-container {
   display: flex;
   justify-content: center;
@@ -41,26 +54,17 @@
   font-weight: bold;
 }
 
-.about-container .aboutImg, .about-container .howImg, .about-container .missionImg {
-  width: 200px;
-  height: 150px;
-  border-radius: 5px;
-}
-.about-container p {
-  padding: 5px 10px;
-}
-
 Link {
   text-decoration: none;
 }
 
-.navBar-container {
+.navBar-container, .footer-container {
   padding: 10px 50px;
 }
-.navBar-container .navlinks {
+.navBar-container .navlinks, .footer-container .navlinks {
   display: inline-flex;
 }
-.navBar-container .links {
+.navBar-container .links, .footer-container .links {
   padding-top: 0.5rem;
 }
 
@@ -85,17 +89,29 @@ a:active {
   height: 45px;
 }
 
-.backgroundcover {
-  width: 100%;
+.footer-socialmedia, .footer-additionalinfo {
+  display: flex;
+  justify-content: center;
+}
+.footer-socialmedia .fa-brands, .footer-additionalinfo .fa-brands {
+  color: black;
+  margin-right: 5px;
+}
+.footer-socialmedia hr, .footer-additionalinfo hr {
+  opacity: 0.1;
 }
 
-.coverlogo {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-  margin: auto;
-  padding: 20px 0;
+.fa-solid {
+  margin-right: 5px;
+}
+
+.about-container .aboutImg, .about-container .howImg, .about-container .missionImg {
+  width: 200px;
+  height: 150px;
+  border-radius: 5px;
+}
+.about-container p {
+  padding: 5px 10px;
 }
 
 .shipandreturn-container {
@@ -203,46 +219,6 @@ textarea {
   flex: 2;
 }
 
-.footer {
-  font-size: 0.75rem;
-  padding: 2rem;
-}
-.footer .additionalinfo {
-  display: flex;
-  justify-content: center;
-}
-.footer ul {
-  display: inline-flex;
-  list-style-type: none;
-}
-.footer li {
-  margin-right: 50px;
-  text-decoration: none;
-}
-.footer li:hover {
-  font-style: italic;
-  cursor: pointer;
-}
-.footer li:active {
-  font-weight: bold;
-}
-
-.socialmedia {
-  display: flex;
-  justify-content: center;
-}
-.socialmedia .fa-brands {
-  color: black;
-  margin-right: 5px;
-}
-.socialmedia hr {
-  opacity: 0.1;
-}
-
-.fa-solid {
-  margin-right: 5px;
-}
-
 @media screen and (max-width: 600px) {
   .about-container .about {
     display: block;
@@ -276,9 +252,6 @@ textarea {
   .navBar-container li a:hover {
     font-weight: bold;
   }
-  .navBar-container .shoppingCart {
-    background-color: rgba(212, 212, 212, 0.5);
-  }
   form {
     font-size: 0.75rem;
     padding: 5px;
@@ -298,12 +271,6 @@ textarea {
   }
   h1 {
     font-size: 1rem;
-  }
-  .additionalinfo ul {
-    display: block;
-  }
-  .additionalinfo li:hover {
-    font-weight: bold;
   }
   .mainimage-container .mainImage {
     width: 100%;

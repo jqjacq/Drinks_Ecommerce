@@ -3,9 +3,9 @@ import { Link } from "react-router-dom"
 export default function Footer(props) {
     return (
         <>
-        <footer className="footer">
+        <footer className="footer-container">
             <br></br>
-            <p className="socialmedia">
+            <p className="footer-socialmedia">
                 <a target="_new" href="https://www.github.com/jqjacq" alt="Github">
                 <i className="fa-brands fa-2x fa-github"></i></a>
                 <a target="_new" href="https://www.facebook.com" alt="Facebook Page">
@@ -17,11 +17,11 @@ export default function Footer(props) {
                 <a target="_new" href="https://www.youtube.com" alt="YouTube Page">
                 <i className="fa-brands fa-2x fa-youtube"></i></a>
             </p>
-            <span className="additionalinfo">
+            <p className="footer-additionalinfo">
                 <Link to="/"> About </Link>
                 <Link to="/shippingreturn"> Shipping & Return </Link>
                 <Link to="/contact"> Feedbacks</Link>
-            </span>
+            </p>
             <hr></hr>
             <div className="centertext">
                 <span>COPYRIGHT 2022 © JQ's Coffee & Tea Co., All rights reserved</span> 
