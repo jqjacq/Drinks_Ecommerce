@@ -23,11 +23,7 @@ $cartbackground: rgb(132, 215, 132);
 .flex {
     display: flex;
 }
-
 .about-container { //ABOUT-HOME PAGE
-    .about {
-        font-weight: normal;
-    } 
     .aboutImg, .howImg, .missionImg {
         width: 200px;
         height: 150px;
@@ -38,10 +34,11 @@ $cartbackground: rgb(132, 215, 132);
     }
 }
 
-Link { //NAV BAR
+Link { //NAV BAR 
     text-decoration: none;
 }
-.navBar-container {
+
+.navBar-container { 
     padding: $contextpadding;
     .navlinks {
         display:inline-flex;
@@ -58,11 +55,9 @@ a {
     }
     &:active {
         font-weight: bold;
+        text-decoration: underline;
     }
 }
-// .home, .contact {
-//     padding-top: .375rem;
-// }
 .logo { //LOGO NEXT TO NAV
     display: block;
     width: 200px;
@@ -80,6 +75,7 @@ a {
     margin: auto;
     padding: 20px 0;
 }
+
 //SHIPPING & RETURN PAGE
 .shipandreturn-container {
     padding: 10px 50px;
@@ -115,18 +111,18 @@ a {
         margin-left: 5px;
         cursor: pointer;
     }
-    }
+}
+.coffeehead, .teahead, .allhead {
+    opacity: 0.5;
+}
 .coffeehead {
     color: blue;
-    opacity: 0.5;
 }
 .teahead {
     color: green;
-    opacity: 0.5;
 }
 .allhead {
     color: red;
-    opacity: 0.5;
 }
 .productbutton-container {
     display: flex;
@@ -170,8 +166,8 @@ form {
             }
     }
     textarea {
-            resize: none;
-        }
+        resize: none;
+    }
     .fa-regular {
         margin-right: 5px;
     }

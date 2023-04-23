@@ -8,8 +8,8 @@ export default function About(props) {
                     <i className="fa-solid fa-house-user halfopacity"></i>
                     Our Coffee and Tea
                 </h1>
-                <section className="contentmarginpadding bold">
-                    How we started
+                <section className="contentmarginpadding">
+                    <p class="bold">How we started</p>
                         <div className="about flex">
                             <img className="howImg" src="../img/howwestarted.jpg" alt="anothercupoftea"></img>
                             <p className="about-info">
@@ -22,8 +22,8 @@ export default function About(props) {
                             </p>
                         </div>
                 </section>
-                <section className="contentmarginpadding bold">
-                    About our tea and coffee
+                <section className="contentmarginpadding">
+                    <p class="bold">About our tea and coffee</p> 
                         <div className="about flex">
                             <img className="aboutImg" src="../img/aboutimage.jpg" alt="cupoftea"></img>
                             <p className="about-info">
@@ -35,8 +35,8 @@ export default function About(props) {
                             </p>
                         </div>
                 </section>
-                <section className="contentmarginpadding bold">
-                    Our mission
+                <section className="contentmarginpadding">
+                    <p class="bold">Our mission</p> 
                         <div className="about flex">
                             <img className="missionImg" src="../img/mission.jpg" alt="colorfultea"></img>
                             <p className="about-info">

@@ -35,53 +35,12 @@ export default function NavBar(props) {
                 <img src = "../img/onlylogo.png" className="logo" alt="Small JQ Logo" />
                 <Link to="/" className="home"> Home </Link>
                 <Link to="/products" className="products"> Products </Link>
-                {/* <Link to="/product" className="btn dropdown-toggle" data-bs-toggle="dropdown"> Product </Link>
-                    <ul className="dropdown-menu">
-                        <Link to="/product" className="dropdown-item"> Full Menu</Link>
-                        <Link to="/coffee" className="dropdown-item"> Coffee </Link>
-                        <Link to="/tea" className="dropdown-item"> Tea </Link>
-                    </ul> */}
                 <Link to="/contact" className="contact">Contact</Link>
                 <Link to="/cart" className="shoppingCart">
                     Cart
                     <i className="fa-solid fa-cart-shopping"></i>
                 </Link>
             </div>
-
-            {/* Alternative to route -- slower loading page */}
-            {/* <ul className="navlinks">
-                <li>
-                    <img src = "../img/onlylogo.png" className="logo" alt="Small JQ Logo" />
-                </li>
-                <li className="homelink" onClick={()=> props.onClick("home")}>Home</li>
-                    <div className="dropdown">
-                <li>
-                    <span className="btn dropdown-toggle" data-bs-toggle="dropdown">
-                        Products
-                            <ul className="dropdown-menu">
-                                <li onClick={()=> props.onClick("product")} className="dropdown-item">Full Menu</li>
-                                <li onClick={()=> props.onClick("coffee")} className="dropdown-item">Coffee</li>
-                                <li onClick={()=> props.onClick("tea")} className="dropdown-item">Tea</li>
-                            </ul>
-                    </span>
-                </li>
-                </div>
-                <li className="contactlink" onClick={()=> props.onClick("contact")}>Contact</li>
-                <li>
-                     <button className="shoppingCart" onClick={()=> props.onClick("cart")}>
-                        <span className="numberofitems"> Cart </span>
-                        <i className="fa-solid fa-cart-shopping"></i>
-                    </button>
-                </li>
-                {/* <li> <SearchList /> </li> */}
-                {/* <li>
-                    <input type="text" className="search" placeholder="Search..."></input> 
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </li> */}
-                {/* <li className="login"> <span> 
-                    <i className="fa-solid fa-person"></i> 
-                    login </span></li> */}
-            {/* </ul> */}
         </div>
         </>
     )

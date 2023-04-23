@@ -22,11 +22,6 @@ export default function Footer(props) {
                 <Link to="/shippingreturn"> Shipping & Return </Link>
                 <Link to="/contact"> Feedbacks</Link>
             </span>
-                 {/* <ul>
-                    <li onClick={()=> props.onClick("about")}>About us</li>
-                    <li onClick={()=> props.onClick("shipping/return")}>Shipping & Return </li>
-                    <li onClick={()=> props.onClick("contact")}>Feedbacks</li>
-                </ul> */}
             <hr></hr>
             <div className="centertext">
                 <span>COPYRIGHT 2022 © JQ's Coffee & Tea Co., All rights reserved</span> 

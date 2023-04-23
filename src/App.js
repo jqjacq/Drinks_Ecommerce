@@ -4,9 +4,6 @@ import Footer from "./component/Footer"
 import Home from "./component/Home"
 import Contact from "./component/Contact"
 import Products from "./component/Products"
-// import Product from "./component/Product"
-// import Tea from "./component/Tea"
-// import Coffee from "./component/Coffee"
 import ShoppingCart from "./component/ShoppingCart"
 import ShippingReturn from "./component/Shipping-Return"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
@@ -49,22 +46,6 @@ export default function App() {
                             onAdd = { onAdd }
                             onRemove = { onRemove }/>
                     </Route>
-                    {/* <Route path="/product">
-                        <Product 
-                            onAdd = { onAdd }
-                            onRemove = { onRemove }/>
-                    </Route>
-                    <Route path="/coffee">
-                        <Coffee 
-                            onAdd = { onAdd }
-                            onRemove = { onRemove }/>
-                    </Route>
-                    <Route path="/tea">
-                        <Tea 
-                            onAdd = { onAdd }
-                            onRemove = { onRemove }
-                        />
-                    </Route> */}
                     <Route path="/cart">
                         <ShoppingCart 
                             cartItems = { cartItems }
@@ -79,10 +60,7 @@ export default function App() {
                         <ShippingReturn />
                     </Route>
                 </Switch>
-             {/* <Content /> */}
-            <Footer 
-                // onClick = {setMyContent}
-            />
+            <Footer />
         </Router>
     )
 }

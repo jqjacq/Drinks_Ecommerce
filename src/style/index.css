@@ -24,9 +24,6 @@
   display: flex;
 }
 
-.about-container .about {
-  font-weight: normal;
-}
 .about-container .aboutImg, .about-container .howImg, .about-container .missionImg {
   width: 200px;
   height: 150px;
@@ -59,6 +56,7 @@ a:hover {
 }
 a:active {
   font-weight: bold;
+  text-decoration: underline;
 }
 
 .logo {
@@ -118,19 +116,20 @@ a:active {
   cursor: pointer;
 }
 
+.coffeehead, .teahead, .allhead {
+  opacity: 0.5;
+}
+
 .coffeehead {
   color: blue;
-  opacity: 0.5;
 }
 
 .teahead {
   color: green;
-  opacity: 0.5;
 }
 
 .allhead {
   color: red;
-  opacity: 0.5;
 }
 
 .productbutton-container {
