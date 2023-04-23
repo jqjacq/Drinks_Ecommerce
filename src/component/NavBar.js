@@ -34,12 +34,13 @@ export default function NavBar(props) {
             <div className="navlinks">
                 <img src = "../img/onlylogo.png" className="logo" alt="Small JQ Logo" />
                 <Link to="/" className="home"> Home </Link>
-                <Link to="/product" className="btn dropdown-toggle" data-bs-toggle="dropdown"> Product </Link>
+                <Link to="/products" className="products"> Products </Link>
+                {/* <Link to="/product" className="btn dropdown-toggle" data-bs-toggle="dropdown"> Product </Link>
                     <ul className="dropdown-menu">
                         <Link to="/product" className="dropdown-item"> Full Menu</Link>
                         <Link to="/coffee" className="dropdown-item"> Coffee </Link>
                         <Link to="/tea" className="dropdown-item"> Tea </Link>
-                    </ul>
+                    </ul> */}
                 <Link to="/contact" className="contact">Contact</Link>
                 <Link to="/cart" className="shoppingCart">
                     Cart
