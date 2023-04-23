@@ -33,10 +33,10 @@ export default function NavBar(props) {
         <div className="navBar-container"> 
             <div className="navlinks">
                 <img src = "../img/onlylogo.png" className="logo" alt="Small JQ Logo" />
-                <Link to="/" className="home"> Home </Link>
-                <Link to="/products" className="products"> Products </Link>
-                <Link to="/contact" className="contact">Contact</Link>
-                <Link to="/cart" className="shoppingCart">
+                <Link to="/" className="links"> Home </Link>
+                <Link to="/products" className="links"> Products </Link>
+                <Link to="/contact" className="links">Contact</Link>
+                <Link to="/cart" className="shoppingCart links">
                     Cart
                     <i className="fa-solid fa-cart-shopping"></i>
                 </Link>

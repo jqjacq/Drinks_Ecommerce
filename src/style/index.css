@@ -43,6 +43,9 @@ Link {
 .navBar-container .navlinks {
   display: inline-flex;
 }
+.navBar-container .links {
+  padding-top: 0.5rem;
+}
 
 a {
   text-decoration: none;
@@ -212,14 +215,6 @@ textarea {
 
 .col-2 {
   flex: 2;
-}
-
-.shoppingCart {
-  border: rgb(132, 215, 132);
-  opacity: 0.8;
-  background-color: rgb(132, 215, 132);
-  padding: 0.5rem;
-  cursor: pointer;
 }
 
 .checkout-button {

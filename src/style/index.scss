@@ -43,6 +43,9 @@ Link { //NAV BAR
     .navlinks {
         display:inline-flex;
     }
+    .links {
+        padding-top: 0.5rem;
+    }
 }
 a {
     text-decoration: none;
@@ -196,14 +199,6 @@ form {
 }
 .col-2 {
     flex: 2;
-}
-
-.shoppingCart {
-    border: $cartbackground;
-    opacity: 0.8;
-    background-color: $cartbackground;
-    padding: 0.5rem;
-    cursor: pointer;
 }
 .checkout-button {
     border-radius: 5px;
