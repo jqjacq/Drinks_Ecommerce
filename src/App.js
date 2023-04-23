@@ -3,11 +3,12 @@ import Navbar from "./component/NavBar"
 import Footer from "./component/Footer"
 import Home from "./component/Home"
 import Contact from "./component/Contact"
-import Product from "./component/Product"
-import ShippingReturn from "./component/Shipping-Return"
-import Tea from "./component/Tea"
-import Coffee from "./component/Coffee"
+import Products from "./component/Products"
+// import Product from "./component/Product"
+// import Tea from "./component/Tea"
+// import Coffee from "./component/Coffee"
 import ShoppingCart from "./component/ShoppingCart"
+import ShippingReturn from "./component/Shipping-Return"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 export default function App() {
@@ -43,13 +44,15 @@ export default function App() {
                     <Route exact path="/">
                         <Home />
                     </Route>
-                    <Route path="/product">
-                        <Product 
+                    <Route path="/products">
+                        <Products 
                             onAdd = { onAdd }
                             onRemove = { onRemove }/>
                     </Route>
-                    <Route path="/shippingreturn">
-                        <ShippingReturn />
+                    {/* <Route path="/product">
+                        <Product 
+                            onAdd = { onAdd }
+                            onRemove = { onRemove }/>
                     </Route>
                     <Route path="/coffee">
                         <Coffee 
@@ -61,7 +64,7 @@ export default function App() {
                             onAdd = { onAdd }
                             onRemove = { onRemove }
                         />
-                    </Route>
+                    </Route> */}
                     <Route path="/cart">
                         <ShoppingCart 
                             cartItems = { cartItems }
@@ -71,6 +74,9 @@ export default function App() {
                     </Route>
                     <Route path="/contact">
                         <Contact />
+                    </Route>
+                    <Route path="/shippingreturn">
+                        <ShippingReturn />
                     </Route>
                 </Switch>
              {/* <Content /> */}

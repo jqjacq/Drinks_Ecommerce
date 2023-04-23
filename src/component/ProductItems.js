@@ -2,21 +2,16 @@ import React from "react";
 import PopUp from "./PopupDetail"
 import '../style/Popup.css'
 import { Button, Tooltip } from "@mui/material"
-import {Box, FormControl} from "@mui/material"
-//InputLabel, MenuItem, Select
+import {Box, FormControl } from "@mui/material"
 
-export default function TeaItem(props) {
+export default function ProductItem(props) {
     const { onAdd } = props
-    // const [price, setPrice] = React.useState('');
     const addProduct = () => {
         onAdd({id:props.data.type, 
             img: props.data.img, 
             cost:props.data.pricePerLb})
         alert("Item has been added to cart.")
     }
-    // const handleChange = (event) => {
-    //   setPrice(event.target.value);
-    // };
     const [buttonPopup, setButtonPopup] = React.useState(false)
     return (
         <>
@@ -41,25 +36,14 @@ export default function TeaItem(props) {
                     <h3> Taste Description: {props.data.description} </h3>
                     <Box sx={{ minWidth: 60 }}>
                         <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
-                            {/* <InputLabel id="demo-simple-select-standard-label"> Price </InputLabel>
-                            <Select
-                                labelId="demo-simple-select-standard-label"
-                                id="demo-simple-select"
-                                value={price}
-                                label="Price"
-                                onChange={handleChange}>
-                                <MenuItem value={1}>½lb: ${props.data.halfLb} </MenuItem> */}
-                                {/* <MenuItem value={2}> */}
                                     1lb: ${props.data.pricePerLb}
-                                {/* </MenuItem>
-                            </Select> */}
                         </FormControl>
                     </Box>
-                    <Button onClick = { addProduct } variant="outlined" size="small" color="success" className="buy"> 
+                    <Button onClick = {addProduct} variant="outlined" size="small" color="success" className="buy"> 
                         Add to cart 
                     </Button> 
                 </div>
             </PopUp>
-     </>
+        </>
     )
 }

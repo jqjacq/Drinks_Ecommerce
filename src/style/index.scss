@@ -60,9 +60,9 @@ a {
         font-weight: bold;
     }
 }
-.home, .contact {
-    padding-top: .375rem;
-}
+// .home, .contact {
+//     padding-top: .375rem;
+// }
 .logo { //LOGO NEXT TO NAV
     display: block;
     width: 200px;
@@ -127,6 +127,17 @@ a {
 .allhead {
     color: red;
     opacity: 0.5;
+}
+.productbutton-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .product-button {
+        margin-right: 0.5rem;
+        border-color: white;
+        background-color: white;
+        border-radius: 10px;
+    }
 }
 
 //CONTACT PAGE
