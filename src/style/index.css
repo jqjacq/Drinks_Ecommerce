@@ -24,6 +24,23 @@
   display: flex;
 }
 
+.productbutton-container, .contactbutton-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-button, .contact-button, .checkout-button {
+  margin-right: 0.5rem;
+  border-color: white;
+  background-color: white;
+  border-radius: 10px;
+  padding: 0.1em 1rem;
+}
+.product-button:hover, .contact-button:hover, .checkout-button:hover {
+  font-weight: bold;
+}
+
 .about-container .aboutImg, .about-container .howImg, .about-container .missionImg {
   width: 200px;
   height: 150px;
@@ -135,18 +152,6 @@ a:active {
   color: red;
 }
 
-.productbutton-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.productbutton-container .product-button {
-  margin-right: 0.5rem;
-  border-color: white;
-  background-color: white;
-  border-radius: 10px;
-}
-
 form {
   font-size: clamp(1rem, 2.5vw, 1.5rem);
   padding: 10px 50px;
@@ -157,25 +162,6 @@ form {
   grid-template-columns: 1fr 1fr;
   gap: 6px 0;
   padding: 10px 50px;
-}
-
-.contact-button {
-  margin-left: 30vw;
-  width: 150px;
-  padding: 5px;
-  border: gray;
-  border-radius: 5px;
-  background-color: rgb(204, 202, 202);
-  box-shadow: 2px 1px 1px;
-  color: black;
-}
-.contact-button:hover {
-  background-color: gray;
-  color: white;
-}
-.contact-button:active {
-  box-shadow: 2px 1px 1px #999;
-  transform: translateY(4px);
 }
 
 textarea {
@@ -215,11 +201,6 @@ textarea {
 
 .col-2 {
   flex: 2;
-}
-
-.checkout-button {
-  border-radius: 5px;
-  border-color: 1px solid black;
 }
 
 .footer {
@@ -310,10 +291,6 @@ textarea {
     width: 100px;
     padding: 5px;
   }
-  .contact-button {
-    margin-left: 15vw;
-    padding: 0;
-  }
 }
 @media screen and (max-width: 320px) {
   body {
@@ -327,9 +304,6 @@ textarea {
   }
   .additionalinfo li:hover {
     font-weight: bold;
-  }
-  .aboutImg, .howImg, .missionImg {
-    display: none;
   }
   .mainimage-container .mainImage {
     width: 100%;

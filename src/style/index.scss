@@ -23,6 +23,24 @@ $cartbackground: rgb(132, 215, 132);
 .flex {
     display: flex;
 }
+
+//ALL BUTTONS 
+.productbutton-container, .contactbutton-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-button, .contact-button, .checkout-button {
+    margin-right: 0.5rem;
+    border-color: white;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0.1em 1rem;
+    &:hover {
+        font-weight: bold;
+    }
+}
+
 .about-container { //ABOUT-HOME PAGE
     .aboutImg, .howImg, .missionImg {
         width: 200px;
@@ -127,17 +145,6 @@ a {
 .allhead {
     color: red;
 }
-.productbutton-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .product-button {
-        margin-right: 0.5rem;
-        border-color: white;
-        background-color: white;
-        border-radius: 10px;
-    }
-}
 
 //CONTACT PAGE
 form {
@@ -149,24 +156,6 @@ form {
         grid-template-columns: 1fr 1fr;
         gap: 6px 0;
         padding: $contextpadding;
-    }
-    .contact-button {
-        margin-left: 30vw;
-        width: 150px;
-        padding: 5px;
-        border: gray;
-        border-radius: 5px;
-        background-color: rgb(204, 202, 202);
-        box-shadow: 2px 1px 1px;
-        color: black;
-            &:hover {
-                background-color: gray;
-                color: white;
-            }
-            &:active {
-                box-shadow: 2px 1px 1px #999;
-                transform: translateY(4px)
-            }
     }
     textarea {
         resize: none;
@@ -200,10 +189,7 @@ form {
 .col-2 {
     flex: 2;
 }
-.checkout-button {
-    border-radius: 5px;
-    border-color: 1px solid black;
-}
+
 
 .footer { //FOOTER
     font-size: .75rem;
@@ -242,6 +228,7 @@ form {
 .fa-solid {
     margin-right: 5px;
 }
+
 
 //MEDIA QUERY FOR MOBILE
 @media screen and (max-width: 600px) {
@@ -295,10 +282,6 @@ form {
             width: 100px;
             padding: 5px;
         }
-        .contact-button {
-            margin-left: 15vw;
-            padding: 0;
-        }
     }
 @media screen and (max-width: 320px) {
     body {
@@ -317,9 +300,6 @@ form {
                 font-weight: bold;
             }
         }
-    }
-    .aboutImg, .howImg, .missionImg {
-        display: none;
     }
     .mainimage-container { //MAIN IMAGE 
         .mainImage {

@@ -71,8 +71,10 @@ export default function Contact() {
                             <option value="callme"> Call me </option>   
                         </select>
                     </div>
+                    <div className="contactbutton-container">
                         { !isSubmitting && <button className="contact-button bold contentmarginpadding" type="submit">Submit</button> }
                         { isSubmitting && <button className="contact-button bold" type="submit" style={{"width":"400px"}}>Submitting... Stuck on load because server is currently not running.</button> }
+                    </div>
                 </fieldset>
 
 
