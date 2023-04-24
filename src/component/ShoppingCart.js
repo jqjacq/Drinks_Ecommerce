@@ -14,7 +14,11 @@ export default function Cart(props) {
 
     return (
         <>
-            <header><h1 className="centertext"> Shopping Cart</h1></header>
+            <header>
+                <h1 className="centertext"> 
+                    Shopping Cart
+                </h1>
+            </header>
             <div className="row"> 
                 <InCart onAdd={onAdd} onRemove={onRemove} cartItems={cartItems}></InCart>
                 

@@ -53,7 +53,6 @@ $cartbackground: rgb(132, 215, 132);
     width: 100%;
     left: 0;
     top: 0;
-    margin: auto;
     padding: 20px 0;
 }
 
@@ -70,7 +69,7 @@ $cartbackground: rgb(132, 215, 132);
     border-radius: 10px;
     padding: 0.1em 1rem;
     &:hover {
-        font-weight: bold;
+        font-style: italic;
     }
 }
 
@@ -165,7 +164,7 @@ form {
 .contact-box {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6px 0;
+    gap: 0.5rem 0;
     padding: $contextpadding;
 }
 textarea {
@@ -176,6 +175,10 @@ textarea {
 }
 .location {
     padding: $contextpadding;
+}
+label {
+    text-align: end;
+    margin-right: 1rem;
 }
 //SHOPPING CART
 .cart-section {
@@ -214,35 +217,25 @@ textarea {
         grid-template-rows: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    .navBar-container li { //NAVBAR & FOOTER
-        text-align: center;
+    .logo {
+        margin: auto;
     }
-    .navBar-container {
+    .navBar-container, .footer-additionalinfo {
         display: block;
         .navlinks {
-            display:inline-block;
-        }
-        li a {
-            display: inline;
-            text-align: center;
-            flex-direction: column;
-                &:hover {
-                font-weight: bold;
-            }
+            display:block;
         }
     }
-    
+    .links {  
+        text-align: center;
+        display: block;
+    }
     form {  //CONTACT
         font-size: $mobilefont;
         padding: 5px;
     }
     .contact-subhead {
         text-align: left;
-    }
-    .contact-box {
-        display: inline-block;
-        width: 100px;
-        padding: 5px;
     }
 }    
 @media screen and (max-width: 320px) {

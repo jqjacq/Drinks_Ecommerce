@@ -61,7 +61,6 @@
   width: 100%;
   left: 0;
   top: 0;
-  margin: auto;
   padding: 20px 0;
 }
 
@@ -79,7 +78,7 @@
   padding: 0.1em 1rem;
 }
 .product-button:hover, .contact-button:hover, .checkout-button:hover {
-  font-weight: bold;
+  font-style: italic;
 }
 
 Link {
@@ -177,7 +176,7 @@ form {
 .contact-box {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 6px 0;
+  gap: 0.5rem 0;
   padding: 10px 50px;
 }
 
@@ -191,6 +190,11 @@ textarea {
 
 .location {
   padding: 10px 50px;
+}
+
+label {
+  text-align: end;
+  margin-right: 1rem;
 }
 
 .cart-section {
@@ -231,22 +235,18 @@ textarea {
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
   }
-  .navBar-container li {
-    text-align: center;
+  .logo {
+    margin: auto;
   }
-  .navBar-container {
+  .navBar-container, .footer-additionalinfo {
     display: block;
   }
-  .navBar-container .navlinks {
-    display: inline-block;
+  .navBar-container .navlinks, .footer-additionalinfo .navlinks {
+    display: block;
   }
-  .navBar-container li a {
-    display: inline;
+  .links {
     text-align: center;
-    flex-direction: column;
-  }
-  .navBar-container li a:hover {
-    font-weight: bold;
+    display: block;
   }
   form {
     font-size: 0.75rem;
@@ -254,11 +254,6 @@ textarea {
   }
   .contact-subhead {
     text-align: left;
-  }
-  .contact-box {
-    display: inline-block;
-    width: 100px;
-    padding: 5px;
   }
 }
 @media screen and (max-width: 320px) {

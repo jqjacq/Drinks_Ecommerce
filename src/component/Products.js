@@ -23,6 +23,7 @@ function handleCoffeeButtonClick() {
 return (
   <>
     <h1 className="centertext">
+    <i class="fa-solid fa-shop halfopacity brown"></i>
       Our Products
     </h1>
     <div className="productbutton-container">

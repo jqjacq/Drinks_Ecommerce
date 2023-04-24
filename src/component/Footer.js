@@ -18,9 +18,9 @@ export default function Footer(props) {
                 <i className="fa-brands fa-2x fa-youtube red"></i></a>
             </p>
             <p className="footer-additionalinfo">
-                <Link to="/"> About </Link>
-                <Link to="/shippingreturn"> Shipping & Return </Link>
-                <Link to="/contact"> Feedbacks</Link>
+                <Link to="/" className="links"> About </Link>
+                <Link to="/shippingreturn" className="links"> Shipping & Return </Link>
+                <Link to="/contact" className="links"> Feedbacks</Link>
             </p>
             <hr></hr>
             <div className="centertext">
