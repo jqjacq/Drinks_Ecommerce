@@ -23,6 +23,27 @@ $cartbackground: rgb(132, 215, 132);
 .flex {
     display: flex;
 }
+.blue {
+    color: blue;
+}
+.green {
+    color: green;
+}
+.orange {
+    color: orange;
+}
+.red {
+    color: red
+}
+.purple {
+    color: purple;
+}
+.brown {
+    color: brown;
+}
+.orange {
+    color: orange;
+}
 //COVER IMAGE
 .backgroundcover {
     width: 100%;
@@ -37,7 +58,7 @@ $cartbackground: rgb(132, 215, 132);
 }
 
 //ALL BUTTONS 
-.productbutton-container, .contactbutton-container {
+.productbutton-container, .submitbutton-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -99,7 +120,6 @@ a {
  .fa-solid {
      margin-right: 5px;
  }
-
  //ABOUT-HOME PAGE
 .about-container { 
     .aboutImg, .howImg, .missionImg {
@@ -111,7 +131,6 @@ a {
         padding: 5px 10px;
     }
 }
-
 //SHIPPING & RETURN PAGE
 .shipandreturn-container {
     padding: 10px 50px;
@@ -119,15 +138,6 @@ a {
 .shipping-question {
     padding-top: 15px;
 }
-.shippinghead {
-    color: purple;
-    opacity: 0.5;
-}
-.returnhead {
-    color: brown;
-    opacity: 0.5;
-}
-
 //PRODUCT PAGE
 .productimage-container {
     display: grid;
@@ -148,19 +158,6 @@ a {
         cursor: pointer;
     }
 }
-.coffeehead, .teahead, .allhead {
-    opacity: 0.5;
-}
-.coffeehead {
-    color: blue;
-}
-.teahead {
-    color: green;
-}
-.allhead {
-    color: red;
-}
-
 //CONTACT PAGE
 form {
     font-size: clamp(1rem, 2.5vw, 1.5rem);
@@ -178,14 +175,9 @@ textarea {
 .fa-regular {
     margin-right: 5px;
 }
-.contacthead {
-    color: orange;
-    opacity: 0.5;
-}
 .location {
     padding: $contextpadding;
 }
-
 //SHOPPING CART
 .cart-section {
     margin-bottom: 30px;
@@ -204,7 +196,6 @@ textarea {
 .col-2 {
     flex: 2;
 }
-
 //MEDIA QUERY FOR MOBILE
 @media screen and (max-width: 600px) {
     .about-container {

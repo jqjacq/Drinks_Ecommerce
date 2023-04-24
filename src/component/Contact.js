@@ -10,13 +10,12 @@ export default function Contact() {
     const [email, setEmail] = useState("")
     const [phonenumber, setPhoneNumber] = useState("")
     const [message, setMessage] = useState("")
-    const [preference, setPreference] = useState("")
     const [isSubmitting, setisSubmitting] = useState(false)
     
     const handleSubmit = (e) => {
         e.preventDefault()
         const timestamp = new Date()
-        const contactinfo = { name, email, phonenumber, message, preference, timestamp }
+        const contactinfo = { name, email, phonenumber, message, timestamp }
 
         setisSubmitting(true)
 
@@ -30,7 +29,7 @@ export default function Contact() {
     }
     return (
         <>
-            <h1 className="centertext"><i className="fa-solid fa-address-card contacthead"></i>Contact us</h1>
+            <h1 className="centertext"><i className="fa-solid fa-address-card orange halfopacity"></i>Contact us</h1>
             <form onSubmit={handleSubmit}>
                 <fieldset>
                     <p className="contact-subhead centertext">Got any questions, suggestions, or concerns? Feel free to let us know!</p>
@@ -62,16 +61,8 @@ export default function Contact() {
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
                             required></textarea>
-                        <label htmlFor="preference"> How would you like to be communicated? </label>
-                        <select
-                            value={preference}
-                            onChange={(e) => setPreference(e.target.value)}>
-                            <option value="sendemail">Email me </option>
-                            <option value="textme"> Text me </option> 
-                            <option value="callme"> Call me </option>   
-                        </select>
                     </div>
-                    <div className="contactbutton-container">
+                    <div className="submitbutton-container">
                         { !isSubmitting && <button className="contact-button bold contentmarginpadding" type="submit">Submit</button> }
                         { isSubmitting && <button className="contact-button bold" type="submit" style={{"width":"400px"}}>Submitting... Stuck on load because server is currently not running.</button> }
                     </div>

@@ -27,15 +27,15 @@ return (
     </h1>
     <div className="productbutton-container">
             <button className="product-button"onClick={handleAllProductsButtonClick}>
-              <i className="fa-solid fa-bag-shopping allhead"></i>
+              <i className="fa-solid fa-bag-shopping red halfopacity"></i>
                 All Products
               </button>
             <button className="product-button"onClick={handleTeaButtonClick}>
-              <i className="fa-solid fa-leaf teahead"></i>
+              <i className="fa-solid fa-leaf green halfopacity"></i>
                 Tea
               </button>
             <button className="product-button"onClick={handleCoffeeButtonClick}>
-              <i className="fa-solid fa-mug-hot coffeehead"></i>
+              <i className="fa-solid fa-mug-hot blue halfopacity"></i>
                 Coffee 
               </button>
     </div>
