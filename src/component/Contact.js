@@ -1,7 +1,3 @@
-//To test out contact being submitted, use npx json-server --watch src/data/contactinfo.json --port 8000
-// --port: 8000 since that is where the data is being fetched.
-// submitted data will show up on contactinfo.json file
-
 import React, { useState } from "react"
 import "../style/index.css"
 
@@ -12,13 +8,15 @@ export default function Contact() {
     const [message, setMessage] = useState("")
     const [isSubmitting, setisSubmitting] = useState(false)
     
+    //To test out contact being submitted, use npx json-server --watch src/data/contactinfo.json --port 8000
+    // --port: 8000 since that is where the data is being fetched.
+    //Once contact form is submitted, it will go to contactinfo.json. 
     const handleSubmit = (e) => {
         e.preventDefault()
         const timestamp = new Date()
         const contactinfo = { name, email, phonenumber, message, timestamp }
 
         setisSubmitting(true)
-
         fetch(' http://localhost:8000/contactinfo', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
@@ -29,7 +27,10 @@ export default function Contact() {
     }
     return (
         <>
-            <h1 className="centertext"><i className="fa-solid fa-address-card orange halfopacity"></i>Contact us</h1>
+            <h1 className="centertext">
+                <i className="fa-solid fa-address-card text-warning halfopacity"></i>
+                Contact us
+            </h1>
             <form onSubmit={handleSubmit}>
                 <fieldset>
                     <p className="contact-subhead centertext">Got any questions, suggestions, or concerns? Feel free to let us know!</p>
