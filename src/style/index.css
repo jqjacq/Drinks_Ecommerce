@@ -64,20 +64,25 @@
   padding: 20px 0;
 }
 
-.productbutton-container, .submitbutton-container {
+.productbutton-container,
+.submitbutton-container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.product-button, .contact-button, .checkout-button {
+.product-button,
+.contact-button,
+.checkout-button {
   margin-right: 0.5rem;
   border-color: white;
   background-color: white;
   border-radius: 10px;
   padding: 0.1em 1rem;
 }
-.product-button:hover, .contact-button:hover, .checkout-button:hover {
+.product-button:hover,
+.contact-button:hover,
+.checkout-button:hover {
   font-style: italic;
 }
 
@@ -85,13 +90,16 @@ Link {
   text-decoration: none;
 }
 
-.navBar-container, .footer-container {
+.navBar-container,
+.footer-container {
   padding: 10px 50px;
 }
-.navBar-container .navlinks, .footer-container .navlinks {
+.navBar-container .navlinks,
+.footer-container .navlinks {
   display: inline-flex;
 }
-.navBar-container .links, .footer-container .links {
+.navBar-container .links,
+.footer-container .links {
   padding-top: 0.5rem;
 }
 
@@ -116,14 +124,17 @@ a:active {
   height: 45px;
 }
 
-.footer-socialmedia, .footer-additionalinfo {
+.footer-socialmedia,
+.footer-additionalinfo {
   display: flex;
   justify-content: center;
 }
-.footer-socialmedia .fa-brands, .footer-additionalinfo .fa-brands {
+.footer-socialmedia .fa-brands,
+.footer-additionalinfo .fa-brands {
   margin-right: 5px;
 }
-.footer-socialmedia hr, .footer-additionalinfo hr {
+.footer-socialmedia hr,
+.footer-additionalinfo hr {
   opacity: 0.1;
 }
 
@@ -131,7 +142,9 @@ a:active {
   margin-right: 5px;
 }
 
-.about-container .aboutImg, .about-container .howImg, .about-container .missionImg {
+.about-container .aboutImg,
+.about-container .howImg,
+.about-container .missionImg {
   width: 200px;
   height: 150px;
   border-radius: 5px;
@@ -223,7 +236,9 @@ label {
   .about-container .about {
     display: block;
   }
-  .about-container .aboutImg, .about-container .howImg, .about-container .missionImg {
+  .about-container .aboutImg,
+  .about-container .howImg,
+  .about-container .missionImg {
     margin-top: 5px;
     width: 100px;
     height: 75px;
@@ -238,10 +253,12 @@ label {
   .logo {
     margin: auto;
   }
-  .navBar-container, .footer-additionalinfo {
+  .navBar-container,
+  .footer-additionalinfo {
     display: block;
   }
-  .navBar-container .navlinks, .footer-additionalinfo .navlinks {
+  .navBar-container .navlinks,
+  .footer-additionalinfo .navlinks {
     display: block;
   }
   .links {
@@ -278,4 +295,4 @@ label {
   .buy {
     font-size: 0.75rem;
   }
-}/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
