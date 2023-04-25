@@ -14,7 +14,7 @@ export default function About(props) {
           <div className="about flex">
             <img
               className="howImg"
-              src="../img/howwestarted.jpg"
+              src={`${process.env.PUBLIC_URL}/img/howwestarted.jpg`}
               alt="anothercupoftea"></img>
             <p className="about-info">
               It all began with our passion for tea and coffee.<br></br>
@@ -32,7 +32,7 @@ export default function About(props) {
           <div className="about flex">
             <img
               className="aboutImg"
-              src="../img/aboutimage.jpg"
+              src={`${process.env.PUBLIC_URL}/img/aboutimage.jpg`}
               alt="cupoftea"></img>
             <p className="about-info">
               We can guarantee that our tea and coffee are of the best quality.{" "}
@@ -54,7 +54,7 @@ export default function About(props) {
           <div className="about flex">
             <img
               className="missionImg"
-              src="../img/mission.jpg"
+              src={`${process.env.PUBLIC_URL}/img/mission.jpg`}
               alt="colorfultea"></img>
             <p className="about-info">
               Our mission is to provide customers with the finest quality teas
