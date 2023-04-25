@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // import SearchList from "./SearchList"
 
 export default function NavBar(props) {
+  //Changing cover image
   const cacheImage = useMemo(
     () => [
       "/img/maincovers/adjustedfront.png",

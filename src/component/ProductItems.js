@@ -6,6 +6,7 @@ import { Box, FormControl } from "@mui/material";
 
 export default function ProductItem(props) {
   const { onAdd } = props;
+  //Let user name item has been added.
   const addProduct = () => {
     onAdd({
       id: props.data.type,
@@ -39,6 +40,7 @@ export default function ProductItem(props) {
           </Button>
         </p>
       </section>
+      {/* Popup Details */}
       <PopUp trigger={buttonPopup} setTrigger={setButtonPopup}>
         <div>
           <h2> {props.data.type} </h2>

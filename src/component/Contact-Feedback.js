@@ -33,7 +33,7 @@ export default function Contact() {
       </h1>
       <form onSubmit={handleSubmit}>
         <fieldset>
-          <p className="contact-subhead centertext">
+          <p className="centertext">
             Got any questions, suggestions, or concerns? Feel free to let us
             know!
           </p>
@@ -46,6 +46,7 @@ export default function Contact() {
               value={name}
               onChange={(e) => setName(e.target.value)}
               required></input>
+
             <label htmlFor="email">Email:</label>
             <input
               type="email"
@@ -53,6 +54,7 @@ export default function Contact() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required></input>
+
             <label htmlFor="phonenumber">Phone Number:</label>
             <input
               type="tel"
@@ -62,6 +64,7 @@ export default function Contact() {
               value={phonenumber}
               onChange={(e) => setPhoneNumber(e.target.value)}
               required></input>
+
             <label htmlFor="message"> Message: </label>
             <textarea
               id="message"
@@ -70,6 +73,7 @@ export default function Contact() {
               onChange={(e) => setMessage(e.target.value)}
               required></textarea>
           </div>
+
           <div className="submitbutton-container">
             {!isSubmitting && (
               <button

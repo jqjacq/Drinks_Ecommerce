@@ -4,7 +4,6 @@ export default function Footer(props) {
   return (
     <>
       <footer className="footer-container">
-        <br></br>
         <p className="footer-socialmedia">
           <a target="_new" href="https://www.github.com/jqjacq" alt="Github">
             <i className="fa-brands fa-2x fa-github"></i>
@@ -19,13 +18,14 @@ export default function Footer(props) {
             <i className="fa-brands fa-2x fa-instagram red"></i>
           </a>
           <a target="_new" href="https://www.twitter.com" alt="Twitter Page">
-            <i className="fa-brands fa-2x fa-twitter blue"></i>
+            <i className="fa-brands fa-2x fa-twitter blue quarteropacity"></i>
           </a>
           <a target="_new" href="https://www.youtube.com" alt="YouTube Page">
             <i className="fa-brands fa-2x fa-youtube red"></i>
           </a>
         </p>
-        <p className="footer-additionalinfo">
+
+        <p className="footer-links">
           <Link to="/" className="links">
             About
           </Link>
@@ -37,6 +37,7 @@ export default function Footer(props) {
           </Link>
         </p>
         <hr></hr>
+
         <div className="centertext">
           <span>
             COPYRIGHT 2022 © JQ's Coffee & Tea Co., All rights reserved

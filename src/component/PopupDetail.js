@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 
 export default function PopUp(props) {
+  //When "Buy" button is clicked, pop up appears.
+  //Allows user to close pop up with ESC.
   useEffect(() => {
     const close = (event) => {
       if (event.key === "Escape") {

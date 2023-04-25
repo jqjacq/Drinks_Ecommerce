@@ -3,11 +3,12 @@ import React from "react";
 export default function About(props) {
   return (
     <>
-      <div className="about-container">
+      <div className="homeabout-container">
         <h1 className="centertext">
           <i className="fa-solid fa-house-user halfopacity"></i>
           Our Coffee and Tea
         </h1>
+
         <section className="contentmarginpadding">
           <p class="bold">How we started</p>
           <div className="about flex">
@@ -25,6 +26,7 @@ export default function About(props) {
             </p>
           </div>
         </section>
+
         <section className="contentmarginpadding">
           <p class="bold">About our tea and coffee</p>
           <div className="about flex">
@@ -46,6 +48,7 @@ export default function About(props) {
             </p>
           </div>
         </section>
+
         <section className="contentmarginpadding">
           <p class="bold">Our mission</p>
           <div className="about flex">

@@ -30,6 +30,9 @@ $cyan:    #0dcaf0;
 .halfopacity {
     opacity: 0.5;
 }
+.quarteropacity {
+    opacity: 0.75;
+}
 .flex {
     display: flex;
 }
@@ -112,7 +115,7 @@ a {
     width: 200px;
     height: 45px;
 }
-.footer-socialmedia, .footer-additionalinfo {
+.footer-socialmedia, .footer-links {
     display: flex;
     justify-content: center;
         .fa-brands {
@@ -126,7 +129,7 @@ a {
      margin-right: 5px;
  }
  //ABOUT-HOME PAGE
-.about-container { 
+.homeabout-container { 
     .aboutImg, .howImg, .missionImg {
         width: 200px;
         height: 150px;
@@ -207,7 +210,7 @@ label {
 }
 //MEDIA QUERY FOR MOBILE
 @media screen and (max-width: 600px) {
-    .about-container {
+    .homeabout-container {
         .about {
             display: block;
         }
@@ -240,9 +243,6 @@ label {
     form {  //CONTACT
         font-size: $mobilefont;
         padding: 5px;
-    }
-    .contact-subhead {
-        text-align: left;
     }
 }    
 @media screen and (max-width: 320px) {

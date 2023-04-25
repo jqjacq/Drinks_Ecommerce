@@ -3,11 +3,14 @@ import React from "react";
 export default function InCart(props) {
   const { cartItems, onAdd, onRemove } = props;
 
+  //No item in cart
   const EmptyCart = () => {
     if (cartItems.length === 0) {
       return <div> Cart is empty. </div>;
     }
   };
+
+  //Items in cart
   const ShowCart = () => {
     if (cartItems) {
       return cartItems.map((item) => (

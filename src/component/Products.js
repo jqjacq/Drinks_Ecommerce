@@ -4,6 +4,7 @@ import ProductItems from "./ProductItems";
 import "../style/index.css";
 
 export default function Product({ onAdd }) {
+  //Categorize all products, tea and coffee.
   const [filteredProducts, setFilteredProducts] = useState(teacoffeeData);
 
   function handleAllProductsButtonClick() {
@@ -11,17 +12,17 @@ export default function Product({ onAdd }) {
   }
 
   function handleTeaButtonClick() {
-    const filtered = teacoffeeData.filter(
+    const filteredTea = teacoffeeData.filter(
       (product) => product.category === "Tea"
     );
-    setFilteredProducts(filtered);
+    setFilteredProducts(filteredTea);
   }
 
   function handleCoffeeButtonClick() {
-    const filtered = teacoffeeData.filter(
+    const filteredCoffee = teacoffeeData.filter(
       (product) => product.category === "Coffee"
     );
-    setFilteredProducts(filtered);
+    setFilteredProducts(filteredCoffee);
   }
 
   return (
