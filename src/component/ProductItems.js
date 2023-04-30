@@ -6,6 +6,8 @@ import { Box, FormControl } from "@mui/material";
 
 export default function ProductItem(props) {
   const { onAdd } = props;
+  const [loadImage, setLoadImage] = React.useState(false);
+  const [buttonPopup, setButtonPopup] = React.useState(false);
   //Let user name item has been added.
   const addProduct = () => {
     onAdd({
@@ -15,16 +17,21 @@ export default function ProductItem(props) {
     });
     alert("Item has been added to cart.");
   };
-  const [buttonPopup, setButtonPopup] = React.useState(false);
+  const handleLoadImage = () => {
+    setLoadImage(true);
+  };
   return (
     <>
       <section>
         <Tooltip title={props.data.description} placement="top-start">
           <img
             src={props.data.img}
-            className="coffeeteaImage"
+            className={`coffeeteaImage blur ${
+              loadImage ? "coffeeteaImage focus" : ""
+            }`}
             alt={props.data.type}
             onClick={() => setButtonPopup(true)}
+            onLoad={handleLoadImage}
           />
         </Tooltip>
         <p className="coffeeteaType"> {props.data.type} </p>

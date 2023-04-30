@@ -36,6 +36,13 @@ $cyan:    #0dcaf0;
 .flex {
     display: flex;
 }
+.blur {
+    filter: blur(10px);
+    transition: filter 0.5s ease-in-out;
+}
+.focus {
+    filter: none;
+}
 .blue {
     color: $blue;
 }

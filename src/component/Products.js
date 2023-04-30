@@ -6,7 +6,11 @@ import "../style/index.css";
 export default function Product({ onAdd }) {
   //Categorize all products, tea and coffee.
   const [filteredProducts, setFilteredProducts] = useState(teacoffeeData);
+  const [loaded, setLoaded] = useState(false);
 
+  function handleImageLoad() {
+    setLoaded(true);
+  }
   function handleAllProductsButtonClick() {
     setFilteredProducts(teacoffeeData);
   }
@@ -49,7 +53,13 @@ export default function Product({ onAdd }) {
       </div>
       <div className="productimage-container contentmarginpadding">
         {filteredProducts.map((product) => (
-          <ProductItems key={product.type} data={product} onAdd={onAdd} />
+          <ProductItems
+            className={`blur ${loaded ? "focus" : ""}`}
+            key={product.type}
+            data={product}
+            onAdd={onAdd}
+            onLoad={handleImageLoad}
+          />
         ))}
       </div>
     </>
