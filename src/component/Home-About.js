@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function About(props) {
+const HomeAbout = React.memo(function (props) {
   return (
     <>
       <div className="homeabout-container">
@@ -70,4 +70,6 @@ export default function About(props) {
       </div>
     </>
   );
-}
+});
+
+export default HomeAbout;

@@ -1,9 +1,19 @@
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useEffect, useState, useMemo, useRef } from "react";
+
 import { Link } from "react-router-dom";
 // import ShoppingCart from "./ShoppingCart"
 // import SearchList from "./SearchList"
 
-export default function NavBar(props) {
+const Nav = React.memo(function (props) {
+  //Smooth scrolling & Auto Scroll
+  const scrollHome = useRef(null);
+  const scrollProduct = useRef(null);
+  const scrollContact = useRef(null);
+  const scrollCart = useRef(null);
+
+  const handleScroll = () => {
+    scrollHome.current.scrollIntoView({ behavior: "smooth" });
+  };
   //Changing cover image
   const cacheImage = useMemo(
     () => [
@@ -45,16 +55,32 @@ export default function NavBar(props) {
             className="logo"
             alt="Small JQ Logo"
           />
-          <Link to="/" className="links">
+          <Link
+            to="/"
+            className="links"
+            onClick={handleScroll}
+            ref={scrollHome}>
             Home
           </Link>
-          <Link to="/products" className="links">
+          <Link
+            to="/products"
+            className="links"
+            onClick={handleScroll}
+            ref={scrollProduct}>
             Products
           </Link>
-          <Link to="/contact" className="links">
+          <Link
+            to="/contact"
+            className="links"
+            onClick={handleScroll}
+            ref={scrollContact}>
             Contact
           </Link>
-          <Link to="/cart" className="shoppingCart links">
+          <Link
+            to="/cart"
+            className="shoppingCart links"
+            onClick={handleScroll}
+            ref={scrollCart}>
             Cart
             <i className="fa-solid fa-cart-shopping"></i>
           </Link>
@@ -62,4 +88,6 @@ export default function NavBar(props) {
       </div>
     </>
   );
-}
+});
+
+export default Nav;

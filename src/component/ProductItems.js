@@ -4,7 +4,7 @@ import "../style/Popup.css";
 import { Button, Tooltip } from "@mui/material";
 import { Box, FormControl } from "@mui/material";
 
-export default function ProductItem(props) {
+const ProductItems = React.memo(function (props) {
   const { onAdd } = props;
   const [loadImage, setLoadImage] = React.useState(false);
   const [buttonPopup, setButtonPopup] = React.useState(false);
@@ -74,4 +74,6 @@ export default function ProductItem(props) {
       </PopUp>
     </>
   );
-}
+});
+
+export default ProductItems;
