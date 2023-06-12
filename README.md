@@ -22,6 +22,7 @@ The homepage features a cover image that changes with a custom logo, a navbar wi
 - Add product to cart and update cart.
 
 ### Installation
+View project at: https://jqjacq.github.io/Drinks_Ecommerce/
 1. Clone the repository 
 <pre> git clone https://github.com/jqjacq/Drinks_Ecommerce.git </pre>
 2. Install NPM packages using `npm install`
