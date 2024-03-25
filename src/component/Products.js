@@ -32,7 +32,7 @@ export default function Product({ onAdd }) {
   return (
     <>
       <h1 className="centertext">
-        <i class="fa-solid fa-shop halfopacity brown"></i>
+        <i className="fa-solid fa-shop halfopacity brown"></i>
         Our Products
       </h1>
       <div className="productbutton-container">
