@@ -10,7 +10,7 @@ const HomeAbout = React.memo(function (props) {
         </h1>
 
         <section className="contentmarginpadding">
-          <p class="bold">How we started</p>
+          <p className="bold">How we started</p>
           <div className="about flex">
             <img
               className="howImg"
@@ -28,7 +28,7 @@ const HomeAbout = React.memo(function (props) {
         </section>
 
         <section className="contentmarginpadding">
-          <p class="bold">About our tea and coffee</p>
+          <p className="bold">About our tea and coffee</p>
           <div className="about flex">
             <img
               className="aboutImg"
@@ -50,7 +50,7 @@ const HomeAbout = React.memo(function (props) {
         </section>
 
         <section className="contentmarginpadding">
-          <p class="bold">Our mission</p>
+          <p className="bold">Our mission</p>
           <div className="about flex">
             <img
               className="missionImg"
