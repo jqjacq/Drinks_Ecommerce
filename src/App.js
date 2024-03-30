@@ -36,9 +36,9 @@ export default function App() {
   };
   return (
     <Router>
-      <Navbar />
+      <Navbar cartItemCount={cartItems.length} />
       <Switch>
-        <Route exact path="/">
+        <Route exact path={["/", "/Drinks_Ecommerce"]}>
           <HomeAbout />
         </Route>
         <Route path="/products">

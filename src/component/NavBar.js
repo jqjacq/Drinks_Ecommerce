@@ -3,8 +3,7 @@ import React, { useEffect, useState, useMemo, useRef } from "react";
 import { Link } from "react-router-dom";
 // import ShoppingCart from "./ShoppingCart"
 // import SearchList from "./SearchList"
-
-const Nav = React.memo(function (props) {
+const Nav = React.memo(function ({ cartItemCount, ...props }) {
   //Smooth scrolling & Auto Scroll
   const scrollHome = useRef(null);
   const scrollProduct = useRef(null);
@@ -81,7 +80,7 @@ const Nav = React.memo(function (props) {
             className="shoppingCart links"
             onClick={handleScroll}
             ref={scrollCart}>
-            Cart
+            [{cartItemCount}] Cart
             <i className="fa-solid fa-cart-shopping"></i>
           </Link>
         </div>

@@ -8,7 +8,7 @@ plugins:
   - prettier
 rules:
   "prettier/prettier":
-    - error
+    - warn
     - "bracketSameLine": true
 parserOptions:
   ecmaVersion: latest
