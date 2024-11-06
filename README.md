@@ -3,7 +3,7 @@
 
 ### About the Project
 I love coffee and tea, so I decided to build this project. This project is an e-commerce website that sells coffee and tea.
-The homepage features a cover image that changes with a custom logo, a navbar with links to the homepage, products, contact, and shopping cart, and a footer with social media, homepage, shipping and return, feedback (contact), and copyright. 
+The homepage features a cover image that changes with a custom logo, a navbar with links to the homepage, products, contact, and shopping cart, and a footer with social media, homepage, shipping and return, feedback (contact), and copyright. This is not an actual business.
 
 ### Built With
 - React
