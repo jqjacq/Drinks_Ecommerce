@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Drinks_Ecommerce/static/css/main.d67635de.css",
-    "main.js": "/Drinks_Ecommerce/static/js/main.0194118a.js",
+    "main.js": "/Drinks_Ecommerce/static/js/main.9fcbffab.js",
     "index.html": "/Drinks_Ecommerce/index.html",
     "main.d67635de.css.map": "/Drinks_Ecommerce/static/css/main.d67635de.css.map",
-    "main.0194118a.js.map": "/Drinks_Ecommerce/static/js/main.0194118a.js.map"
+    "main.9fcbffab.js.map": "/Drinks_Ecommerce/static/js/main.9fcbffab.js.map"
   },
   "entrypoints": [
     "static/css/main.d67635de.css",
-    "static/js/main.0194118a.js"
+    "static/js/main.9fcbffab.js"
   ]
 }
